@@ -1,24 +1,57 @@
-<div class="container">
-  <header>
-    <h1>🏥 RippleBoards</h1>
-    <p>Decision Support System for Health Equity Interventions</p>
+<div class="app-container">
+  <!-- Enhanced Header -->
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-left">
+        <h1>🏥 RippleBoards</h1>
+        <p class="tagline">Health Equity Decision Support System</p>
+      </div>
+      <div class="header-right" *ngIf="selectedLocation">
+        <div class="selected-location-badge">
+          <span class="badge-label">Analyzing:</span>
+          <span class="badge-location">{{ selectedLocation }}</span>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main class="dashboard">
-    <div class="dashboard-left">
+  <!-- Main Dashboard Grid -->
+  <main class="dashboard-layout">
+    <!-- Left Panel: Location Selection & Context -->
+    <section class="dashboard-panel left-panel">
       <app-map (locationSelected)="onLocationSelect($event)"></app-map>
-    </div>
-    
-    <div class="dashboard-right">
+    </section>
+
+    <!-- Center Panel: Metrics & Analysis -->
+    <section class="dashboard-panel center-panel">
+      <div class="metrics-container" *ngIf="selectedLocation">
+        <h2 class="panel-title">📊 Health Equity Metrics</h2>
+        <app-health-metrics 
+          [location]="selectedLocation"
+          [simulationResults]="simulationResults">
+        </app-health-metrics>
+      </div>
+      <div class="empty-state" *ngIf="!selectedLocation">
+        <div class="empty-icon">🗺️</div>
+        <p>Select a census tract to view health equity baseline metrics</p>
+      </div>
+    </section>
+
+    <!-- Right Panel: Intervention Simulator -->
+    <section class="dashboard-panel right-panel">
       <app-control-panel 
         [selectedLocation]="selectedLocation"
-        (simulationResults)="onSimulationComplete($event)">
+        (simulationResults)="onSimulationComplete($event)"
+        (scenarioCreated)="onScenarioCreated($event)">
       </app-control-panel>
-      
-      <app-results 
-        *ngIf="simulationResults"
-        [results]="simulationResults">
-      </app-results>
-    </div>
+    </section>
   </main>
+
+  <!-- Results Dashboard (Full-width when active) -->
+  <section class="results-dashboard" *ngIf="simulationResults">
+    <app-results 
+      [results]="simulationResults"
+      [baseline]="baselineMetrics">
+    </app-results>
+  </section>
 </div>

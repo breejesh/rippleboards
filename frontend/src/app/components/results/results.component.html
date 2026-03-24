@@ -1,44 +1,117 @@
-<div class="results-container" *ngIf="results">
+<div class="results-dashboard" *ngIf="results">
+  <!-- Results Header -->
   <div class="results-header">
-    <h2>Simulation Results</h2>
-    <p>{{ results.location }}</p>
+    <div class="header-content">
+      <div>
+        <h2>Simulation Results</h2>
+        <p class="location-name">{{ results.location }}</p>
+      </div>
+      <div class="header-actions">
+        <button (click)="shareResults()" class="action-btn" title="Share scenario">
+          <span>📤</span>
+        </button>
+        <button (click)="exportReport()" class="action-btn" title="Export report">
+          <span>📥</span>
+        </button>
+      </div>
+    </div>
   </div>
 
-  <div class="results-body">
-    <div class="result-card">
-      <h3>Intervention</h3>
-      <p class="value">{{ results.intervention | uppercase }}</p>
-    </div>
-
-    <div class="result-card highlight">
-      <h3>Projected Mortality Reduction</h3>
-      <p class="value" [style.color]="getMortalityChangeColor()">
-        {{ (results.projected_mortality_reduction * 100).toFixed(1) }}%
-      </p>
-    </div>
-
-    <div class="result-card">
-      <h3>Priority Score</h3>
-      <p class="value">{{ results.priority_score.toFixed(0) }}/100</p>
-      <div class="progress-bar">
-        <div 
-          class="progress-fill" 
-          [style.width.%]="results.priority_score">
+  <!-- Key Metrics Grid -->
+  <div class="metrics-grid">
+    <div *ngFor="let metric of metrics" class="metric-card big">
+      <div class="metric-icon">{{ metric.icon }}</div>
+      <div class="metric-content">
+        <div class="metric-label">{{ metric.label }}</div>
+        <div class="metric-value" [style.color]="metric.color">
+          {{ metric.value }}<span class="metric-unit">{{ metric.unit }}</span>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="current-state">
-      <h3>Current State</h3>
-      <ul>
-        <li *ngFor="let item of (results.current_state | keyvalue) | slice:0:5">
-          <strong>{{ item.key }}:</strong> <span>{{ item.value }}</span>
-        </li>
-      </ul>
+  <!-- Intervention Details -->
+  <div class="intervention-details">
+    <h3>Intervention Applied</h3>
+    <div class="details-grid">
+      <div class="detail-item">
+        <label>Intervention</label>
+        <div class="detail-value">{{ results.intervention | uppercase }}</div>
+      </div>
+      <div class="detail-item">
+        <label>Intensity</label>
+        <div class="detail-value">{{ (results.intensity * 100) | number:'1.0-0' }}%</div>
+      </div>
+      <div class="detail-item">
+        <label>Impact Level</label>
+        <div class="badge" [style.backgroundColor]="getMortalityColor()">
+          {{ getImpactLevel() }}
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="results-footer">
-    <button class="export-btn">Export Report</button>
+  <!-- Baseline Comparison -->
+  <div class="current-state" *ngIf="results.current_state">
+    <h3>Baseline Health Metrics</h3>
+    <div class="metrics-list">
+      <div *ngFor="let entry of (results.current_state | keyvalue) | slice:0:5" class="metric-item">
+        <div class="item-label">{{ entry.key }}</div>
+        <div class="item-value">
+          <span class="value-number">{{ entry.value }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Impact Visualization -->
+  <div class="impact-visualization">
+    <h3>Projected Health Outcomes</h3>
+    <div class="outcome-cards">
+      <div class="outcome-card positive">
+        <div class="outcome-title">Lives Impacted</div>
+        <div class="outcome-indicator">{{ (results.intensity * 1000) | number:'1.0-0' }}</div>
+        <div class="outcome-detail">estimated individuals</div>
+      </div>
+      <div class="outcome-card opportunity">
+        <div class="outcome-title">Health Improvement</div>
+        <div class="outcome-indicator">{{ ((results.projected_mortality_reduction || 0) * 100).toFixed(0) }}%</div>
+        <div class="outcome-detail">mortality reduction</div>
+      </div>
+      <div class="outcome-card priority">
+        <div class="outcome-title">Priority Score</div>
+        <div class="outcome-indicator">{{ (results.priority_score | number:'1.0-0') }}/100</div>
+        <div class="outcome-detail">intervention value</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="results-actions">
+    <button (click)="shareResults()" class="btn btn-secondary">
+      📤 Share Results
+    </button>
+    <button (click)="exportReport()" class="btn btn-primary">
+      📥 Export Report
+    </button>
+  </div>
+
+  <!-- Insights Section -->
+  <div class="insights-section">
+    <h3>Key Insights</h3>
+    <div class="insights-list">
+      <div class="insight-card">
+        <span class="insight-icon">💡</span>
+        <p>This intervention shows <strong>{{ getImpactLevel() }}</strong> potential based on current modeling</p>
+      </div>
+      <div class="insight-card">
+        <span class="insight-icon">📈</span>
+        <p>Increasing intensity to {{ ((results.intensity + 0.2) * 100).toFixed(0) }}% could proportionally increase impact</p>
+      </div>
+      <div class="insight-card">
+        <span class="insight-icon">🎯</span>
+        <p>This location prioritizes health equity interventions with priority score {{ (results.priority_score | number:'1.0-0') }}/100</p>
+      </div>
+    </div>
   </div>
 </div>

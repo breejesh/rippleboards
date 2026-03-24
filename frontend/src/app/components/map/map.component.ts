@@ -55,6 +55,15 @@ export class MapComponent implements OnInit {
     this.filterLocations();
   }
 
+  onStateClick(state: string) {
+    if (this.stateFilter === state) {
+      this.stateFilter = '';
+    } else {
+      this.stateFilter = state;
+    }
+    this.filterLocations();
+  }
+
   selectLocation(location: string) {
     this.selectedLocation = location;
     this.locationSelected.emit(location);

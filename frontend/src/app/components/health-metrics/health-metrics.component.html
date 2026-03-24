@@ -1,0 +1,64 @@
+<div class="health-metrics">
+  <!-- Loading State -->
+  <div class="loading-spinner" *ngIf="loading">
+    <div class="spinner"></div>
+    <p>Loading health equity data...</p>
+  </div>
+
+  <!-- Metrics View -->
+  <div *ngIf="!loading && metrics.length > 0" class="metrics-view">
+    <!-- Tab Navigation -->
+    <div class="metric-tabs">
+      <button 
+        *ngFor="let tab of metrics | slice:0:3"
+        (click)="selectedTab = tab.category"
+        [class.active]="selectedTab === tab.category"
+        class="tab-btn">
+        {{ tab.category }}
+      </button>
+    </div>
+
+    <!-- Metrics Cards -->
+    <div class="metrics-cards">
+      <div *ngFor="let metric of metrics | slice:0:1" class="metric-group">
+        <div *ngFor="let item of metric.items" class="metric-card">
+          <div class="metric-header">
+            <span class="metric-label">{{ item.Measure | slice:0:40 }}</span>
+            <span class="metric-value">{{ (item.Data_Value | number:'1.1-1') ?? 'N/A' }}</span>
+          </div>
+          <div class="metric-bar">
+            <div class="bar-fill" [style.width.%]="(item.Data_Value || 0)" 
+                 [style.backgroundColor]="getMetricColor(item.Data_Value || 0)"></div>
+          </div>
+          <div class="metric-category">{{ item.Category }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison with Simulation -->
+    <div *ngIf="getComparisonStatus()" class="comparison-card">
+      <div class="comparison-header">
+        <h3>Projected Impact</h3>
+      </div>
+      <div class="comparison-metrics">
+        <div class="metric-item">
+          <label>Mortality Reduction</label>
+          <div class="value" [style.color]="getComparisonStatus()!.statusColor">
+            +{{ getComparisonStatus()!.reduction }}%
+          </div>
+        </div>
+        <div class="metric-item">
+          <label>Impact Level</label>
+          <div class="badge" [style.backgroundColor]="getComparisonStatus()!.statusColor">
+            {{ getComparisonStatus()!.status }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div *ngIf="!loading && metrics.length === 0" class="empty-state">
+    <p>No metrics data available</p>
+  </div>
+</div>

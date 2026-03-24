@@ -1,44 +1,69 @@
 <div class="control-panel">
+  <!-- Header -->
   <div class="panel-header">
-    <h2>⚙️ Intervention Simulator</h2>
+    <h2>⚙️ Scenario Builder</h2>
+    <p class="subtitle">Design and simulate health equity interventions</p>
   </div>
 
-  <div class="panel-body">
-    <div class="form-group">
-      <label>Selected Location</label>
-      <div class="location-display" [class.empty]="!selectedLocation">
-        {{ selectedLocation || 'Click a location on map to begin' }}
+  <!-- Intervention Selection -->
+  <div class="intervention-section" [class.disabled]="!selectedLocation">
+    <h3 class="section-title">Step 1: Select Intervention</h3>
+    <div class="intervention-grid">
+      <div *ngFor="let intervention of interventions"
+           (click)="selectIntervention(intervention)"
+           [class.selected]="selectedIntervention?.id === intervention.id"
+           class="intervention-card">
+        <div class="card-icon">{{ intervention.icon }}</div>
+        <div class="card-content">
+          <h4>{{ intervention.name }}</h4>
+          <p class="card-description">{{ intervention.description }}</p>
+          <p class="card-impact">{{ intervention.expectedImpact }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Intensity Control -->
+  <div class="intensity-section" [class.disabled]="!selectedIntervention">
+    <h3 class="section-title">Step 2: Set Intensity</h3>
+    
+    <div class="intensity-display">
+      <div class="intensity-value">{{ (intensity * 100).toFixed(0) }}%</div>
+      <div class="intensity-label">{{ getIntensityLabel() }}</div>
+    </div>
+
+    <div class="intensity-slider-wrapper">
+      <input 
+        type="range" 
+        [(ngModel)]="intensity"
+        min="0"
+        max="1"
+        step="0.05"
+        [disabled]="!selectedIntervention"
+        class="intensity-slider">
+      <div class="slider-marks">
+        <span class="mark" *ngFor="let i of [0, 0.25, 0.5, 0.75, 1]">
+          {{ (i * 100) }}%
+        </span>
       </div>
     </div>
 
-    <div class="form-group">
-      <label for="intervention">Intervention Type</label>
-      <select [(ngModel)]="intervention" id="intervention">
-        <option value="broadband_grant">🌐 Broadband Grant</option>
-        <option value="housing_subsidy">🏠 Housing Subsidy</option>
-        <option value="healthcare_access">🏥 Healthcare Access</option>
-      </select>
+    <div class="intensity-description">
+      <p *ngIf="intensity <= 0.3">Low investment - minimal expected impact</p>
+      <p *ngIf="intensity > 0.3 && intensity <= 0.6">Moderate investment - meaningful population improvement</p>
+      <p *ngIf="intensity > 0.6 && intensity <= 0.85">Substantial investment - significant health gains</p>
+      <p *ngIf="intensity > 0.85">Maximum investment - transformative potential</p>
     </div>
+  </div>
 
-    <div class="form-group">
-      <label for="intensity">Intervention Intensity</label>
-      <div class="intensity-row">
-        <input 
-          type="range" 
-          [(ngModel)]="intensity" 
-          min="0" 
-          max="1" 
-          step="0.1"
-          id="intensity">
-        <span class="intensity-value">{{ (intensity * 100).toFixed(0) }}%</span>
-      </div>
-    </div>
-
+  <!-- Run Simulation -->
+  <div class="simulation-section">
     <button 
-      (click)="runSimulation()" 
-      [disabled]="!selectedLocation || loading"
-      class="simulate-btn">
-      {{ loading ? '⏳ Running...' : '▶️ Run Simulation' }}
-    </button>
+      (click)="runSimulation()"
+      [disabled]="!canRunSimulation()"
+      [class.loading]="loading"
+      class="run-btn">
+      <span class="btn-text">{{ loading ? 'Simulating...' : 'Run Simulation' }}</span>
+    </button>   
   </div>
 </div>

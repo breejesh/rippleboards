@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { MapComponent } from './components/map/map.component';
 import { ControlPanelComponent } from './components/control-panel/control-panel.component';
 import { ResultsComponent } from './components/results/results.component';
+import { HealthMetricsComponent } from './components/health-metrics/health-metrics.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
     ControlPanelComponent,
-    ResultsComponent
+    ResultsComponent,
+    HealthMetricsComponent
   ],
   imports: [
     BrowserModule,

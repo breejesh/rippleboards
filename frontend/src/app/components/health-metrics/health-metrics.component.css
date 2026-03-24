@@ -1,0 +1,187 @@
+.health-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(102, 126, 234, 0.2);
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.metrics-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.metric-tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.15);
+  padding-bottom: 0.75rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  color: rgba(224, 224, 224, 0.6);
+  font-size: 0.9rem;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: rgba(224, 224, 224, 0.9);
+}
+
+.tab-btn.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+}
+
+.metrics-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.metric-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.metric-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(102, 126, 234, 0.15);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.metric-card:hover {
+  background: rgba(102, 126, 234, 0.05);
+  border-color: rgba(102, 126, 234, 0.3);
+  transform: translateX(4px);
+}
+
+.metric-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: rgba(224, 224, 224, 0.8);
+  flex: 1;
+}
+
+.metric-value {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.metric-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.bar-fill {
+  height: 100%;
+  transition: width 0.3s;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.metric-category {
+  font-size: 0.75rem;
+  color: rgba(224, 224, 224, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.comparison-card {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(240, 147, 251, 0.05) 100%);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.comparison-header {
+  margin-bottom: 1rem;
+}
+
+.comparison-header h3 {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.comparison-metrics {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.metric-item {
+  flex: 1;
+}
+
+.metric-item label {
+  display: block;
+  font-size: 0.75rem;
+  color: rgba(224, 224, 224, 0.6);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.metric-item .value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #4CAF50;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 600;
+  background: #4CAF50;
+}
+
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: rgba(224, 224, 224, 0.4);
+}
