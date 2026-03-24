@@ -1,0 +1,44 @@
+<div class="results-container" *ngIf="results">
+  <div class="results-header">
+    <h2>Simulation Results</h2>
+    <p>{{ results.location }}</p>
+  </div>
+
+  <div class="results-body">
+    <div class="result-card">
+      <h3>Intervention</h3>
+      <p class="value">{{ results.intervention | uppercase }}</p>
+    </div>
+
+    <div class="result-card highlight">
+      <h3>Projected Mortality Reduction</h3>
+      <p class="value" [style.color]="getMortalityChangeColor()">
+        {{ (results.projected_mortality_reduction * 100).toFixed(1) }}%
+      </p>
+    </div>
+
+    <div class="result-card">
+      <h3>Priority Score</h3>
+      <p class="value">{{ results.priority_score.toFixed(0) }}/100</p>
+      <div class="progress-bar">
+        <div 
+          class="progress-fill" 
+          [style.width.%]="results.priority_score">
+        </div>
+      </div>
+    </div>
+
+    <div class="current-state">
+      <h3>Current State</h3>
+      <ul>
+        <li *ngFor="let item of (results.current_state | keyvalue) | slice:0:5">
+          <strong>{{ item.key }}:</strong> <span>{{ item.value }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="results-footer">
+    <button class="export-btn">Export Report</button>
+  </div>
+</div>

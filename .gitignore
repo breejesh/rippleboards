@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vscode/
+*.pyc
+__pycache__/
+*.egg-info/
+.DS_Store
+.env
+*.log
+venv/
+.angular/

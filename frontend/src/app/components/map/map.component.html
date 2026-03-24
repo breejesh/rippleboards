@@ -1,0 +1,66 @@
+<div class="map-container">
+  <div class="map-header">
+    <div class="header-top">
+      <h2>📍 Select Census Tract</h2>
+      <span class="count-badge">{{ getDisplayCount() }}</span>
+    </div>
+    <p class="header-subtitle">Click any location to begin simulation</p>
+  </div>
+
+  <div class="controls">
+    <div class="search-box">
+      <input 
+        type="text" 
+        placeholder="🔍 Search location or state..."
+        [(ngModel)]="searchQuery"
+        (input)="onSearchChange()"
+        class="search-input">
+    </div>
+    
+    <div class="filter-row">
+      <select 
+        [(ngModel)]="stateFilter"
+        (change)="onStateChange()"
+        class="state-select">
+        <option value="">All States</option>
+        <option *ngFor="let state of states" [value]="state">{{ state }}</option>
+      </select>
+      
+      <button *ngIf="searchQuery || stateFilter" (click)="clearFilters()" class="clear-btn">
+        Clear Filters
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="loading" class="loading-state">
+    <div class="spinner"></div>
+    <p>Loading {{ locations.length > 0 ? locations.length : '' }} census tracts...</p>
+  </div>
+
+  <div class="locations-grid" *ngIf="!loading">
+    <button 
+      *ngFor="let loc of filteredLocations | slice:0:50"
+      (click)="selectLocation(loc.LocationName)"
+      [class.selected]="selectedLocation === loc.LocationName"
+      class="location-btn"
+      title="{{loc.LocationName}}, {{ loc.StateDesc }}">
+      <span class="state-badge">{{ loc.StateDesc }}</span>
+      <span class="location-name">{{ loc.LocationName }}</span>
+    </button>
+  </div>
+
+  <div *ngIf="!loading && filteredLocations.length === 0" class="no-results">
+    <p>No locations found matching your filters</p>
+    <button (click)="clearFilters()" class="retry-btn">Clear Filters</button>
+  </div>
+
+  <div class="map-preview">
+    <div class="preview-header">Featured Area</div>
+    <svg viewBox="0 0 400 300" class="map-svg">
+      <path d="M 20,80 L 120,60 L 150,80 L 160,100 L 140,120 L 100,130 L 80,140 L 40,120 Z" 
+            class="state-path" opacity="0.1"/>
+      <circle cx="100" cy="100" r="3" fill="#667eea" opacity="0.6"/>
+      <text x="20" y="250" font-size="12" fill="#999">Hover over locations for details</text>
+    </svg>
+  </div>
+</div>

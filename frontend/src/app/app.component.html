@@ -1,0 +1,24 @@
+<div class="container">
+  <header>
+    <h1>🏥 RippleBoards</h1>
+    <p>Decision Support System for Health Equity Interventions</p>
+  </header>
+
+  <main class="dashboard">
+    <div class="dashboard-left">
+      <app-map (locationSelected)="onLocationSelect($event)"></app-map>
+    </div>
+    
+    <div class="dashboard-right">
+      <app-control-panel 
+        [selectedLocation]="selectedLocation"
+        (simulationResults)="onSimulationComplete($event)">
+      </app-control-panel>
+      
+      <app-results 
+        *ngIf="simulationResults"
+        [results]="simulationResults">
+      </app-results>
+    </div>
+  </main>
+</div>
