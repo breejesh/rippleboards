@@ -1,14 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { ApiService } from '../../services/api.service';
 
-interface Intervention {
-  id: string;
-  name: string;
-  icon: string;
-  description: string;
-  expectedImpact: string;
-}
-
 @Component({
   selector: 'app-control-panel',
   templateUrl: './control-panel.component.html',
@@ -18,76 +10,104 @@ export class ControlPanelComponent implements OnChanges {
   @Input() selectedLocation: string = '';
   @Output() simulationResults = new EventEmitter<any>();
   @Output() scenarioCreated = new EventEmitter<any>();
+  @Output() policyStackChanged = new EventEmitter<any>();
 
-  interventions: Intervention[] = [
-    {
-      id: 'broadband_grant',
-      name: 'Broadband Grant',
-      icon: '🌐',
-      description: 'Expand high-speed internet access to underserved areas',
-      expectedImpact: '5-15% mortality reduction through telehealth enablement'
-    },
-    {
-      id: 'housing_subsidy',
-      name: 'Housing Subsidy',
-      icon: '🏠',
-      description: 'Reduce housing cost burden for low-income residents',
-      expectedImpact: '8-20% improvement in health outcomes'
-    },
-    {
-      id: 'healthcare_access',
-      name: 'Healthcare Access',
-      icon: '🏥',
-      description: 'Increase primary care and preventive services',
-      expectedImpact: '10-25% reduction in preventable mortality'
-    }
-  ];
+  medicationSubsidyPct: number = 70;
+  housingVouchers: boolean = false;
+  newTransitLine: boolean = false;
+  fiberExpansion: boolean = false;
 
-  selectedIntervention: Intervention | null = null;
-  intensity: number = 0.5;
   loading: boolean = false;
   scenarios: any[] = [];
-  showAdvanced: boolean = false;
 
   constructor(private api: ApiService) {}
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['selectedLocation'] && changes['selectedLocation'].currentValue) {
-      this.selectedIntervention = null;
-      this.intensity = 0.5;
+      this.emitPolicyStack();
     }
   }
 
-  selectIntervention(intervention: Intervention) {
-    this.selectedIntervention = intervention;
+  emitPolicyStack() {
+    this.policyStackChanged.emit(this.getPolicyStack());
   }
 
-  toggleAdvanced() {
-    this.showAdvanced = !this.showAdvanced;
+  getPolicyStack() {
+    return {
+      medicationSubsidyPct: this.medicationSubsidyPct,
+      housingVouchers: this.housingVouchers,
+      newTransitLine: this.newTransitLine,
+      fiberExpansion: this.fiberExpansion
+    };
+  }
+
+  getStackCount(): number {
+    return [this.housingVouchers, this.newTransitLine, this.fiberExpansion].filter(Boolean).length + 1;
+  }
+
+  getStackIntensity(): number {
+    const socialDigitalBoost =
+      (this.housingVouchers ? 0.12 : 0) +
+      (this.newTransitLine ? 0.1 : 0) +
+      (this.fiberExpansion ? 0.11 : 0);
+
+    const clinicalBoost = (this.medicationSubsidyPct / 100) * 0.52;
+    return Math.min(1, 0.25 + socialDigitalBoost + clinicalBoost);
+  }
+
+  getPrimaryInterventionCode(): string {
+    if (this.housingVouchers || this.newTransitLine || this.fiberExpansion) {
+      return 'stacked_policy_bundle';
+    }
+    return 'medication_subsidy';
   }
 
   runSimulation() {
-    if (!this.selectedLocation || !this.selectedIntervention) {
+    if (!this.selectedLocation) {
       return;
     }
 
     this.loading = true;
+    this.emitPolicyStack();
+    const intensity = this.getStackIntensity();
     
     this.api.simulate(
       this.selectedLocation,
-      this.selectedIntervention.id,
-      this.intensity
+      this.getPrimaryInterventionCode(),
+      intensity
     ).subscribe(
       (data: any) => {
-        this.simulationResults.emit(data);
+        const projectedReductionPct = (data?.projected_mortality_reduction || 0) * 100;
+        const ripplePayload = {
+          healthcareUtilizationIncrease: Math.round(9 + this.medicationSubsidyPct * 0.24 + this.getStackCount() * 2.8),
+          erVisitDensityDecrease: Math.round(4 + projectedReductionPct * 0.6),
+          prematureMortalityReductionPer100k: Math.round(910 * (projectedReductionPct / 100))
+        };
+
+        const roiMultiplier = 1.4 + (projectedReductionPct / 14);
+        const scenarioResults = {
+          ...data,
+          intensity,
+          policyStack: this.getPolicyStack(),
+          ripple: ripplePayload,
+          roi: {
+            savingsPerDollar: Number(roiMultiplier.toFixed(2)),
+            annualSavings: Math.round(2500000 * roiMultiplier)
+          }
+        };
+
+        this.simulationResults.emit(scenarioResults);
+
         const scenario = {
           id: Date.now(),
           location: this.selectedLocation,
-          intervention: this.selectedIntervention,
-          intensity: this.intensity,
-          results: data,
+          intervention: this.getPrimaryInterventionCode(),
+          intensity,
+          policyStack: this.getPolicyStack(),
+          results: scenarioResults,
           timestamp: new Date()
         };
+
         this.scenarios.push(scenario);
         this.scenarioCreated.emit(scenario);
         this.loading = false;
@@ -100,14 +120,15 @@ export class ControlPanelComponent implements OnChanges {
   }
 
   getIntensityLabel(): string {
-    if (this.intensity <= 0.3) return 'Minimal';
-    if (this.intensity <= 0.6) return 'Moderate';
-    if (this.intensity <= 0.85) return 'Substantial';
-    return 'Maximum';
+    const intensity = this.getStackIntensity();
+    if (intensity <= 0.35) return 'Low';
+    if (intensity <= 0.65) return 'Moderate';
+    if (intensity <= 0.85) return 'High';
+    return 'Transformative';
   }
 
   canRunSimulation(): boolean {
-    return !!this.selectedLocation && !!this.selectedIntervention && !this.loading;
+    return !!this.selectedLocation && !this.loading;
   }
 }
 

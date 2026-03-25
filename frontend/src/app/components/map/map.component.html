@@ -1,23 +1,19 @@
 <div class="map-container">
   <div class="map-header">
-    <div class="header-top">
-      <h2>📍 Select Census Tract</h2>
-      <span class="count-badge">{{ getDisplayCount() }}</span>
-    </div>
-    <p class="header-subtitle">Click any location to begin simulation</p>
+    <p class="kicker">Region Selection</p>
+    <h2>Choose Geography</h2>
+    <p class="header-subtitle">Search and pick one region.</p>
   </div>
 
   <div class="controls">
-    <div class="search-box">
+    <div class="filter-row compact">
       <input 
         type="text" 
-        placeholder="🔍 Search location or state..."
+        placeholder="Search location, state, or ZIP"
         [(ngModel)]="searchQuery"
         (input)="onSearchChange()"
         class="search-input">
-    </div>
-    
-    <div class="filter-row">
+
       <select 
         [(ngModel)]="stateFilter"
         (change)="onStateChange()"
@@ -27,19 +23,21 @@
       </select>
       
       <button *ngIf="searchQuery || stateFilter" (click)="clearFilters()" class="clear-btn">
-        Clear Filters
+        Reset
       </button>
+
+      <span class="count-badge">{{ getDisplayCount() }}</span>
     </div>
   </div>
 
   <div *ngIf="loading" class="loading-state">
     <div class="spinner"></div>
-    <p>Loading {{ locations.length > 0 ? locations.length : '' }} census tracts...</p>
+    <p>Loading regions...</p>
   </div>
 
   <div class="locations-grid" *ngIf="!loading">
     <button 
-      *ngFor="let loc of filteredLocations | slice:0:50"
+      *ngFor="let loc of getVisibleLocations()"
       (click)="selectLocation(loc.LocationName)"
       [class.selected]="selectedLocation === loc.LocationName"
       class="location-btn"
@@ -50,34 +48,7 @@
   </div>
 
   <div *ngIf="!loading && filteredLocations.length === 0" class="no-results">
-    <p>No locations found matching your filters</p>
+    <p>No matching regions.</p>
     <button (click)="clearFilters()" class="retry-btn">Clear Filters</button>
-  </div>
-
-  <div class="map-preview">
-    <div class="preview-header">Select from Map</div>
-    <svg viewBox="0 0 960 600" class="map-svg" xmlns="http://www.w3.org/2000/svg">
-      <!-- Interactive US States Map -->
-      <!-- Michigan -->
-      <g class="state" [class.active]="stateFilter === 'Michigan'" (click)="onStateClick('Michigan')" title="Michigan">
-        <path d="M 720,150 L 750,140 L 760,170 L 740,190 Z" class="state-path"/>
-      </g>
-      <!-- Minnesota -->
-      <g class="state" [class.active]="stateFilter === 'Minnesota'" (click)="onStateClick('Minnesota')" title="Minnesota">
-        <path d="M 620,120 L 660,115 L 665,155 L 625,160 Z" class="state-path"/>
-      </g>
-      <!-- Mississippi -->
-      <g class="state" [class.active]="stateFilter === 'Mississippi'" (click)="onStateClick('Mississippi')" title="Mississippi">
-        <path d="M 520,220 L 540,215 L 545,290 L 525,295 Z" class="state-path"/>
-      </g>
-      <!-- Missouri -->
-      <g class="state" [class.active]="stateFilter === 'Missouri'" (click)="onStateClick('Missouri')" title="Missouri">
-        <path d="M 480,180 L 520,175 L 525,230 L 485,235 Z" class="state-path"/>
-      </g>
-      <!-- Other states (simplified) -->
-      <g class="state other-states" title="Other States">
-        <path d="M 250,100 L 400,90 L 410,200 L 260,210 Z" class="state-path-inactive"/>
-      </g>
-    </svg>
   </div>
 </div>

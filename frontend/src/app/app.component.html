@@ -1,57 +1,124 @@
 <div class="app-container">
-  <!-- Enhanced Header -->
   <header class="app-header">
     <div class="header-content">
-      <div class="header-left">
-        <h1>🏥 RippleBoards</h1>
-        <p class="tagline">Health Equity Decision Support System</p>
+      <div>
+        <p class="eyebrow">Policy Simulation Sandbox</p>
+        <h1>RippleBoards</h1>
+        <p class="tagline">Model policy impact in minutes.</p>
       </div>
-      <div class="header-right" *ngIf="selectedLocation">
-        <div class="selected-location-badge">
-          <span class="badge-label">Analyzing:</span>
+      <div class="selected-location-badge" *ngIf="selectedLocation">
+          <span class="badge-label">Active Geography</span>
           <span class="badge-location">{{ selectedLocation }}</span>
-        </div>
       </div>
     </div>
   </header>
 
-  <!-- Main Dashboard Grid -->
-  <main class="dashboard-layout">
-    <!-- Left Panel: Location Selection & Context -->
-    <section class="dashboard-panel left-panel">
-      <app-map (locationSelected)="onLocationSelect($event)"></app-map>
-    </section>
+  <main class="ux-layout">
+    <aside class="left-pane">
+      <div class="left-pane-scroll">
+        <div class="step-card">
+          <button
+            class="step-header"
+            type="button"
+            (click)="toggleStep('region')"
+            [attr.aria-expanded]="isRegionStepOpen">
+            <div class="step-title">
+              <span class="step-number">1</span>
+              <div>
+                <h2>Select Region</h2>
+                <p *ngIf="isRegionStepOpen">Search by location, state, or ZIP.</p>
+                <p class="step-selection">Current: {{ getRegionSelectionSummary() }}</p>
+              </div>
+            </div>
+            <div class="step-header-meta">
+              <span class="step-toggle" aria-hidden="true">{{ isRegionStepOpen ? 'Hide' : 'Show' }}</span>
+            </div>
+          </button>
 
-    <!-- Center Panel: Metrics & Analysis -->
-    <section class="dashboard-panel center-panel">
-      <div class="metrics-container" *ngIf="selectedLocation">
-        <h2 class="panel-title">📊 Health Equity Metrics</h2>
-        <app-health-metrics 
-          [location]="selectedLocation"
-          [simulationResults]="simulationResults">
-        </app-health-metrics>
-      </div>
-      <div class="empty-state" *ngIf="!selectedLocation">
-        <div class="empty-icon">🗺️</div>
-        <p>Select a census tract to view health equity baseline metrics</p>
-      </div>
-    </section>
+          <div class="step-body" [class.collapsed]="!isRegionStepOpen">
+            <app-map (locationSelected)="onLocationSelect($event)"></app-map>
+          </div>
+        </div>
 
-    <!-- Right Panel: Intervention Simulator -->
-    <section class="dashboard-panel right-panel">
-      <app-control-panel 
-        [selectedLocation]="selectedLocation"
-        (simulationResults)="onSimulationComplete($event)"
-        (scenarioCreated)="onScenarioCreated($event)">
-      </app-control-panel>
+        <div class="step-card">
+          <button
+            class="step-header"
+            type="button"
+            (click)="toggleStep('policy')"
+            [attr.aria-expanded]="isPolicyStepOpen">
+            <div class="step-title">
+              <span class="step-number">2</span>
+              <div>
+                <h2>Configure Policy Stack</h2>
+                <p *ngIf="isPolicyStepOpen">Choose interventions and tune intensity.</p>
+                <p class="step-selection">Current: {{ getPolicySelectionSummary() }}</p>
+              </div>
+            </div>
+            <div class="step-header-meta">
+              <span class="step-toggle" aria-hidden="true">{{ isPolicyStepOpen ? 'Hide' : 'Show' }}</span>
+            </div>
+          </button>
+
+          <div class="step-body" [class.collapsed]="!isPolicyStepOpen">
+            <app-control-panel
+              #policyPanel
+              [selectedLocation]="selectedLocation"
+              (simulationResults)="onSimulationComplete($event)"
+              (scenarioCreated)="onScenarioCreated($event)"
+              (policyStackChanged)="onPolicyStackChange($event)">
+            </app-control-panel>
+          </div>
+        </div>
+
+        <div class="next-step-row">
+          <button
+            class="next-step-btn"
+            type="button"
+            (click)="goToNextStep()"
+            [disabled]="!canGoNext()">
+            {{ getNextButtonLabel() }}
+          </button>
+        </div>
+
+      </div>
+
+      <div class="left-action-bar">
+        <div class="status-chips">
+          <span class="status-chip" [class.ok]="!!selectedLocation">Region {{ selectedLocation ? 'set' : 'missing' }}</span>
+          <span class="status-chip" [class.ok]="!!activePolicyStack">Policy {{ activePolicyStack ? 'ready' : 'draft' }}</span>
+        </div>
+        <button
+          class="run-persistent-btn"
+          (click)="policyPanel && policyPanel.runSimulation()"
+          [disabled]="!policyPanel || !policyPanel.canRunSimulation()"
+          [class.loading]="policyPanel && policyPanel.loading">
+          {{ policyPanel && policyPanel.loading ? 'Running simulation...' : 'Run Simulation' }}
+        </button>
+      </div>
+    </aside>
+
+    <section class="right-pane">
+      <div class="analysis-head">
+        <h2>3. Analyze Outcomes</h2>
+        <p>Trend, ripple, and ROI at a glance.</p>
+      </div>
+
+      <app-results
+        [results]="simulationResults"
+        [policyStack]="activePolicyStack"
+        [selectedLocation]="selectedLocation">
+      </app-results>
+
+      <section class="logic-flow">
+        <strong>Structural Logic:</strong>
+        <span class="logic-step">Action: {{ getPolicyActionLabel() }}</span>
+        <span class="logic-arrow">-&gt;</span>
+        <span class="logic-step">Mechanism: {{ getStructuralMechanism() }}</span>
+        <span class="logic-arrow">-&gt;</span>
+        <span class="logic-step">Midstream: Adherence up, avoidable ER down</span>
+        <span class="logic-arrow">-&gt;</span>
+        <span class="logic-step">Outcome: Premature mortality down</span>
+      </section>
     </section>
   </main>
-
-  <!-- Results Dashboard (Full-width when active) -->
-  <section class="results-dashboard" *ngIf="simulationResults">
-    <app-results 
-      [results]="simulationResults"
-      [baseline]="baselineMetrics">
-    </app-results>
-  </section>
 </div>

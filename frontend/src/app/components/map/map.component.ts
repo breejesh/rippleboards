@@ -26,9 +26,11 @@ export class MapComponent implements OnInit {
   loadLocations() {
     this.api.getLocations().subscribe(
       (data: any) => {
-        this.locations = data;
-        this.filteredLocations = data;
-        this.states = Array.from(new Set(data.map((l: any) => l.StateDesc))).sort() as string[];
+        this.locations = Array.isArray(data) ? data : [];
+        this.filteredLocations = [...this.locations];
+        this.states = Array.from(
+          new Set(this.locations.map((l: any) => l?.StateDesc).filter((state: any) => !!state))
+        ).sort() as string[];
         this.loading = false;
       },
       (error) => {
@@ -38,13 +40,41 @@ export class MapComponent implements OnInit {
     );
   }
 
+  getZipFromLocation(loc: any): string {
+    const locationName = (loc?.LocationName || '').toString();
+    const geoValue = (loc?.Geolocation || '').toString();
+
+    const locationZipMatch = locationName.match(/\b\d{5}(?:-\d{4})?\b/);
+    if (locationZipMatch) {
+      return locationZipMatch[0].slice(0, 5);
+    }
+
+    const geoZipMatch = geoValue.match(/\b\d{5}(?:-\d{4})?\b/);
+    if (geoZipMatch) {
+      return geoZipMatch[0].slice(0, 5);
+    }
+
+    return '';
+  }
+
   filterLocations() {
+    const normalizedSearch = this.searchQuery.trim().toLowerCase();
+
     this.filteredLocations = this.locations.filter((loc: any) => {
-      const matchesSearch = loc.LocationName.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
-                           loc.StateDesc.toLowerCase().includes(this.searchQuery.toLowerCase());
-      const matchesState = !this.stateFilter || loc.StateDesc === this.stateFilter;
+      const locationName = (loc?.LocationName || '').toString().toLowerCase();
+      const stateName = (loc?.StateDesc || '').toString().toLowerCase();
+      const zip = this.getZipFromLocation(loc);
+
+      const matchesSearch = !normalizedSearch ||
+        locationName.includes(normalizedSearch) ||
+        stateName.includes(normalizedSearch) ||
+        zip.includes(normalizedSearch);
+
+      const matchesState = !this.stateFilter || loc?.StateDesc === this.stateFilter;
+
       return matchesSearch && matchesState;
     });
+
   }
 
   onSearchChange() {
@@ -72,7 +102,11 @@ export class MapComponent implements OnInit {
   clearFilters() {
     this.searchQuery = '';
     this.stateFilter = '';
-    this.filteredLocations = this.locations;
+    this.filteredLocations = [...this.locations];
+  }
+
+  getVisibleLocations(): any[] {
+    return this.filteredLocations;
   }
 
   getDisplayCount(): string {
