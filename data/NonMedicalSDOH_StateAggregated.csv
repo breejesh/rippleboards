@@ -1,0 +1,460 @@
+Year,StateAbbr,StateDesc,DataSource,Category,Measure,Data_Value_Unit,Data_Value_Type,CategoryID,MeasureID,DataValueTypeID,Short_Question_Text,Data_Value,MOE,TotalPopulation
+2017-2021,AL,Alabama,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.7,10.4,5777.67
+2017-2021,AL,Alabama,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,22.04,17.52,5777.67
+2017-2021,AL,Alabama,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,23.57,24.46,5777.67
+2017-2021,AL,Alabama,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,15.92,9.22,5777.67
+2017-2021,AL,Alabama,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.16,8.63,5777.67
+2017-2021,AL,Alabama,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,29.39,13.29,5777.67
+2017-2021,AL,Alabama,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,31.2,13.83,5777.67
+2017-2021,AL,Alabama,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.87,11.86,5777.67
+2017-2021,AL,Alabama,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.6,11.34,5777.67
+2017-2021,AK,Alaska,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,18.48,16.15,2588.87
+2017-2021,AK,Alaska,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,18.47,26.14,2588.87
+2017-2021,AK,Alaska,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,28.95,26.68,2588.87
+2017-2021,AK,Alaska,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,12.44,9.0,2588.87
+2017-2021,AK,Alaska,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,13.9,8.05,2588.87
+2017-2021,AK,Alaska,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,31.91,12.37,2588.87
+2017-2021,AK,Alaska,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,59.72,17.07,2588.87
+2017-2021,AK,Alaska,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.98,16.1,2588.87
+2017-2021,AK,Alaska,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,13.88,13.04,2588.87
+2017-2021,AZ,Arizona,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,8.22,14.75,15668.29
+2017-2021,AZ,Arizona,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,19.69,22.93,15668.29
+2017-2021,AZ,Arizona,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,28.28,30.32,15668.29
+2017-2021,AZ,Arizona,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,16.67,11.24,15668.29
+2017-2021,AZ,Arizona,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,25.63,11.37,15668.29
+2017-2021,AZ,Arizona,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,33.72,14.54,15668.29
+2017-2021,AZ,Arizona,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,50.74,17.57,15668.29
+2017-2021,AZ,Arizona,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.03,14.96,15668.29
+2017-2021,AZ,Arizona,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,8.73,17.13,15668.29
+2017-2021,AR,Arkansas,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.59,16.43,3585.63
+2017-2021,AR,Arkansas,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,21.36,24.77,3585.63
+2017-2021,AR,Arkansas,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,27.63,29.46,3585.63
+2017-2021,AR,Arkansas,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,15.48,11.2,3585.63
+2017-2021,AR,Arkansas,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.17,10.65,3585.63
+2017-2021,AR,Arkansas,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,32.15,15.92,3585.63
+2017-2021,AR,Arkansas,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,25.96,17.22,3585.63
+2017-2021,AR,Arkansas,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,7.4,17.21,3585.63
+2017-2021,AR,Arkansas,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.26,14.59,3585.63
+2017-2021,CA,California,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,6.68,9.32,24832.78
+2017-2021,CA,California,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,28.77,16.06,24832.78
+2017-2021,CA,California,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,14.15,22.71,24832.78
+2017-2021,CA,California,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,15.89,8.28,24832.78
+2017-2021,CA,California,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.24,8.39,24832.78
+2017-2021,CA,California,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,22.56,10.21,24832.78
+2017-2021,CA,California,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,47.11,12.9,24832.78
+2017-2021,CA,California,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.57,9.36,24832.78
+2017-2021,CA,California,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,7.69,10.15,24832.78
+2017-2021,CO,Colorado,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.47,12.08,11045.53
+2017-2021,CO,Colorado,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,25.47,19.98,11045.53
+2017-2021,CO,Colorado,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,14.6,26.43,11045.53
+2017-2021,CO,Colorado,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.78,8.95,11045.53
+2017-2021,CO,Colorado,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,18.26,9.66,11045.53
+2017-2021,CO,Colorado,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,19.94,10.94,11045.53
+2017-2021,CO,Colorado,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,26.09,15.45,11045.53
+2017-2021,CO,Colorado,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.91,12.48,11045.53
+2017-2021,CO,Colorado,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,4.7,11.8,11045.53
+2017-2021,CT,Connecticut,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.17,6.6,10618.44
+2017-2021,CT,Connecticut,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,25.95,14.67,10618.44
+2017-2021,CT,Connecticut,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,9.44,21.57,10618.44
+2017-2021,CT,Connecticut,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,6.06,6.52,10618.44
+2017-2021,CT,Connecticut,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.66,7.59,10618.44
+2017-2021,CT,Connecticut,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,13.83,7.47,10618.44
+2017-2021,CT,Connecticut,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,20.08,9.62,10618.44
+2017-2021,CT,Connecticut,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.93,8.61,10618.44
+2017-2021,CT,Connecticut,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.84,6.81,10618.44
+2017-2021,DE,Delaware,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.9,7.3,5354.49
+2017-2021,DE,Delaware,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,27.53,13.9,5354.49
+2017-2021,DE,Delaware,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,9.72,23.28,5354.49
+2017-2021,DE,Delaware,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.4,5.96,5354.49
+2017-2021,DE,Delaware,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,22.14,7.23,5354.49
+2017-2021,DE,Delaware,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,20.26,11.19,5354.49
+2017-2021,DE,Delaware,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,33.19,13.96,5354.49
+2017-2021,DE,Delaware,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.85,8.59,5354.49
+2017-2021,DE,Delaware,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.03,6.69,5354.49
+2017-2021,DC,District of Columbia,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,3.9,0.3,683154.0
+2017-2021,DC,District of Columbia,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,27.4,0.8,683154.0
+2017-2021,DC,District of Columbia,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,12.8,0.7,683154.0
+2017-2021,DC,District of Columbia,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.8,0.4,683154.0
+2017-2021,DC,District of Columbia,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,12.2,0.1,683154.0
+2017-2021,DC,District of Columbia,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,21.0,0.7,683154.0
+2017-2021,DC,District of Columbia,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,63.3,0.4,683154.0
+2017-2021,DC,District of Columbia,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.8,0.4,683154.0
+2017-2021,DC,District of Columbia,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,7.1,0.4,683154.0
+2017-2021,FL,Florida,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,3.11,5.62,17487.32
+2017-2021,FL,Florida,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,28.88,11.92,17487.32
+2017-2021,FL,Florida,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,15.34,17.43,17487.32
+2017-2021,FL,Florida,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,12.2,6.23,17487.32
+2017-2021,FL,Florida,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,24.16,6.82,17487.32
+2017-2021,FL,Florida,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,24.09,8.72,17487.32
+2017-2021,FL,Florida,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,36.98,10.1,17487.32
+2017-2021,FL,Florida,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.97,6.6,17487.32
+2017-2021,FL,Florida,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.59,7.04,17487.32
+2017-2021,GA,Georgia,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.66,9.71,8138.81
+2017-2021,GA,Georgia,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,26.31,16.66,8138.81
+2017-2021,GA,Georgia,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,24.21,21.98,8138.81
+2017-2021,GA,Georgia,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,16.92,8.77,8138.81
+2017-2021,GA,Georgia,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,16.93,7.54,8138.81
+2017-2021,GA,Georgia,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,30.84,12.7,8138.81
+2017-2021,GA,Georgia,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,43.42,14.62,8138.81
+2017-2021,GA,Georgia,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,8.71,11.51,8138.81
+2017-2021,GA,Georgia,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.83,9.05,8138.81
+2017-2021,HI,Hawaii,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,8.98,6.76,8790.58
+2017-2021,HI,Hawaii,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,26.06,11.12,8790.58
+2017-2021,HI,Hawaii,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,13.03,17.58,8790.58
+2017-2021,HI,Hawaii,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,6.93,4.56,8790.58
+2017-2021,HI,Hawaii,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.11,6.26,8790.58
+2017-2021,HI,Hawaii,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,18.73,8.01,8790.58
+2017-2021,HI,Hawaii,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,69.49,11.7,8790.58
+2017-2021,HI,Hawaii,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.83,6.24,8790.58
+2017-2021,HI,Hawaii,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.67,5.63,8790.58
+2017-2021,ID,Idaho,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,3.33,11.31,5891.17
+2017-2021,ID,Idaho,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,23.58,17.04,5891.17
+2017-2021,ID,Idaho,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,16.34,25.91,5891.17
+2017-2021,ID,Idaho,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,12.26,8.17,5891.17
+2017-2021,ID,Idaho,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.78,8.64,5891.17
+2017-2021,ID,Idaho,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,25.76,12.09,5891.17
+2017-2021,ID,Idaho,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,19.89,12.71,5891.17
+2017-2021,ID,Idaho,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.95,11.04,5891.17
+2017-2021,ID,Idaho,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.17,10.41,5891.17
+2017-2021,IL,Illinois,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.77,9.62,8013.64
+2017-2021,IL,Illinois,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,20.0,14.61,8013.64
+2017-2021,IL,Illinois,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,16.79,19.62,8013.64
+2017-2021,IL,Illinois,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.61,6.26,8013.64
+2017-2021,IL,Illinois,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,18.44,7.23,8013.64
+2017-2021,IL,Illinois,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,21.38,9.93,8013.64
+2017-2021,IL,Illinois,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,16.0,10.35,8013.64
+2017-2021,IL,Illinois,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.19,9.92,8013.64
+2017-2021,IL,Illinois,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.96,7.56,8013.64
+2017-2021,IN,Indiana,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.64,8.94,6984.26
+2017-2021,IN,Indiana,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,20.61,15.0,6984.26
+2017-2021,IN,Indiana,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,17.43,22.8,6984.26
+2017-2021,IN,Indiana,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,11.14,7.59,6984.26
+2017-2021,IN,Indiana,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,17.83,7.85,6984.26
+2017-2021,IN,Indiana,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,22.88,10.69,6984.26
+2017-2021,IN,Indiana,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,10.29,9.3,6984.26
+2017-2021,IN,Indiana,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.7,10.0,6984.26
+2017-2021,IN,Indiana,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,4.78,7.77,6984.26
+2017-2021,IA,Iowa,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.23,11.88,2725.29
+2017-2021,IA,Iowa,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,17.36,16.54,2725.29
+2017-2021,IA,Iowa,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,18.1,22.34,2725.29
+2017-2021,IA,Iowa,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.79,6.53,2725.29
+2017-2021,IA,Iowa,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.13,8.55,2725.29
+2017-2021,IA,Iowa,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,19.83,10.33,2725.29
+2017-2021,IA,Iowa,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,8.58,12.11,2725.29
+2017-2021,IA,Iowa,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.6,11.93,2725.29
+2017-2021,IA,Iowa,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,4.08,8.73,2725.29
+2017-2021,KS,Kansas,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.38,15.34,3858.03
+2017-2021,KS,Kansas,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,18.55,21.72,3858.03
+2017-2021,KS,Kansas,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,20.19,26.43,3858.03
+2017-2021,KS,Kansas,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.0,8.17,3858.03
+2017-2021,KS,Kansas,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.38,9.82,3858.03
+2017-2021,KS,Kansas,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,23.13,12.16,3858.03
+2017-2021,KS,Kansas,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,13.73,14.61,3858.03
+2017-2021,KS,Kansas,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.52,14.82,3858.03
+2017-2021,KS,Kansas,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,4.08,12.23,3858.03
+2017-2021,KY,Kentucky,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.85,9.99,4945.51
+2017-2021,KY,Kentucky,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,23.02,16.94,4945.51
+2017-2021,KY,Kentucky,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,19.84,24.89,4945.51
+2017-2021,KY,Kentucky,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,14.06,9.04,4945.51
+2017-2021,KY,Kentucky,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,18.38,8.7,4945.51
+2017-2021,KY,Kentucky,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,29.48,12.77,4945.51
+2017-2021,KY,Kentucky,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,11.74,10.19,4945.51
+2017-2021,KY,Kentucky,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.37,11.09,4945.51
+2017-2021,KY,Kentucky,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.12,10.72,4945.51
+2017-2021,LA,Louisiana,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.46,9.25,6293.62
+2017-2021,LA,Louisiana,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,23.77,16.97,6293.62
+2017-2021,LA,Louisiana,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,25.57,24.46,6293.62
+2017-2021,LA,Louisiana,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,17.54,9.67,6293.62
+2017-2021,LA,Louisiana,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,16.86,8.28,6293.62
+2017-2021,LA,Louisiana,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,35.1,14.15,6293.62
+2017-2021,LA,Louisiana,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,39.31,13.74,6293.62
+2017-2021,LA,Louisiana,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,9.33,11.33,6293.62
+2017-2021,LA,Louisiana,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,7.08,10.61,6293.62
+2017-2021,ME,Maine,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.11,4.2,4217.99
+2017-2021,ME,Maine,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,27.84,12.48,4217.99
+2017-2021,ME,Maine,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,17.86,19.13,4217.99
+2017-2021,ME,Maine,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.24,5.21,4217.99
+2017-2021,ME,Maine,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,24.03,8.54,4217.99
+2017-2021,ME,Maine,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,24.41,10.02,4217.99
+2017-2021,ME,Maine,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,7.22,5.86,4217.99
+2017-2021,ME,Maine,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.65,6.68,4217.99
+2017-2021,ME,Maine,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.51,6.39,4217.99
+2017-2021,MD,Maryland,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.85,8.51,10258.04
+2017-2021,MD,Maryland,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,22.91,15.32,10258.04
+2017-2021,MD,Maryland,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,11.6,22.86,10258.04
+2017-2021,MD,Maryland,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.29,7.65,10258.04
+2017-2021,MD,Maryland,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,17.95,7.91,10258.04
+2017-2021,MD,Maryland,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,14.98,8.89,10258.04
+2017-2021,MD,Maryland,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,35.94,11.72,10258.04
+2017-2021,MD,Maryland,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.65,9.47,10258.04
+2017-2021,MD,Maryland,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.27,9.24,10258.04
+2017-2021,MA,Massachusetts,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.25,3.44,20169.48
+2017-2021,MA,Massachusetts,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,26.76,10.2,20169.48
+2017-2021,MA,Massachusetts,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,10.59,13.87,20169.48
+2017-2021,MA,Massachusetts,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,6.34,3.76,20169.48
+2017-2021,MA,Massachusetts,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,21.57,5.79,20169.48
+2017-2021,MA,Massachusetts,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,13.57,5.85,20169.48
+2017-2021,MA,Massachusetts,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,17.37,6.24,20169.48
+2017-2021,MA,Massachusetts,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.57,4.78,20169.48
+2017-2021,MA,Massachusetts,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.52,4.79,20169.48
+2017-2021,MI,Michigan,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.55,6.16,7565.24
+2017-2021,MI,Michigan,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,23.6,11.05,7565.24
+2017-2021,MI,Michigan,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,16.38,16.88,7565.24
+2017-2021,MI,Michigan,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,8.83,5.15,7565.24
+2017-2021,MI,Michigan,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.3,6.59,7565.24
+2017-2021,MI,Michigan,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,24.31,8.83,7565.24
+2017-2021,MI,Michigan,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,13.88,7.55,7565.24
+2017-2021,MI,Michigan,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.23,7.1,7565.24
+2017-2021,MI,Michigan,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.06,6.62,7565.24
+2017-2021,MN,Minnesota,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.95,9.4,5473.59
+2017-2021,MN,Minnesota,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,20.58,13.85,5473.59
+2017-2021,MN,Minnesota,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,17.3,17.44,5473.59
+2017-2021,MN,Minnesota,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,8.18,5.38,5473.59
+2017-2021,MN,Minnesota,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.04,6.39,5473.59
+2017-2021,MN,Minnesota,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,20.58,8.86,5473.59
+2017-2021,MN,Minnesota,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,14.12,10.2,5473.59
+2017-2021,MN,Minnesota,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.01,9.32,5473.59
+2017-2021,MN,Minnesota,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,4.7,6.66,5473.59
+2017-2021,MS,Mississippi,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.8,11.8,4092.79
+2017-2021,MS,Mississippi,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,24.82,20.57,4092.79
+2017-2021,MS,Mississippi,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,27.76,28.62,4092.79
+2017-2021,MS,Mississippi,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,18.41,11.2,4092.79
+2017-2021,MS,Mississippi,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,17.01,9.15,4092.79
+2017-2021,MS,Mississippi,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,37.56,15.33,4092.79
+2017-2021,MS,Mississippi,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,48.77,15.7,4092.79
+2017-2021,MS,Mississippi,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,10.07,14.45,4092.79
+2017-2021,MS,Mississippi,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,8.02,13.05,4092.79
+2017-2021,MO,Missouri,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.55,15.42,4434.01
+2017-2021,MO,Missouri,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,22.69,22.33,4434.01
+2017-2021,MO,Missouri,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,20.79,25.63,4434.01
+2017-2021,MO,Missouri,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,13.89,9.06,4434.01
+2017-2021,MO,Missouri,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,18.2,8.88,4434.01
+2017-2021,MO,Missouri,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,28.98,13.71,4434.01
+2017-2021,MO,Missouri,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,14.24,13.69,4434.01
+2017-2021,MO,Missouri,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.72,15.53,4434.01
+2017-2021,MO,Missouri,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.13,11.86,4434.01
+2017-2021,MT,Montana,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.99,19.73,2029.07
+2017-2021,MT,Montana,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,22.59,29.97,2029.07
+2017-2021,MT,Montana,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,22.38,35.03,2029.07
+2017-2021,MT,Montana,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.6,11.05,2029.07
+2017-2021,MT,Montana,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,24.03,13.02,2029.07
+2017-2021,MT,Montana,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,27.11,14.31,2029.07
+2017-2021,MT,Montana,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,18.82,16.56,2029.07
+2017-2021,MT,Montana,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.84,20.37,2029.07
+2017-2021,MT,Montana,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.27,17.32,2029.07
+2017-2021,NE,Nebraska,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.51,14.38,3051.63
+2017-2021,NE,Nebraska,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,17.52,19.64,3051.63
+2017-2021,NE,Nebraska,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,18.66,24.25,3051.63
+2017-2021,NE,Nebraska,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,8.6,7.8,3051.63
+2017-2021,NE,Nebraska,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,21.3,9.34,3051.63
+2017-2021,NE,Nebraska,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,20.51,11.17,3051.63
+2017-2021,NE,Nebraska,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,11.47,13.84,3051.63
+2017-2021,NE,Nebraska,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.95,14.0,3051.63
+2017-2021,NE,Nebraska,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,3.34,10.31,3051.63
+2017-2021,NV,Nevada,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.79,11.29,24795.62
+2017-2021,NV,Nevada,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,25.13,19.69,24795.62
+2017-2021,NV,Nevada,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,16.41,30.22,24795.62
+2017-2021,NV,Nevada,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.79,10.16,24795.62
+2017-2021,NV,Nevada,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,27.77,12.63,24795.62
+2017-2021,NV,Nevada,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,21.39,11.52,24795.62
+2017-2021,NV,Nevada,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,29.74,15.42,24795.62
+2017-2021,NV,Nevada,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.31,12.47,24795.62
+2017-2021,NV,Nevada,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,7.02,13.82,24795.62
+2017-2021,NH,New Hampshire,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.03,6.32,6572.53
+2017-2021,NH,New Hampshire,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,29.57,15.57,6572.53
+2017-2021,NH,New Hampshire,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,14.19,23.58,6572.53
+2017-2021,NH,New Hampshire,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.48,7.3,6572.53
+2017-2021,NH,New Hampshire,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,22.52,9.58,6572.53
+2017-2021,NH,New Hampshire,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,16.96,9.35,6572.53
+2017-2021,NH,New Hampshire,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,8.41,7.8,6572.53
+2017-2021,NH,New Hampshire,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.76,7.86,6572.53
+2017-2021,NH,New Hampshire,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,3.5,7.99,6572.53
+2017-2021,NJ,New Jersey,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.07,6.7,8727.79
+2017-2021,NJ,New Jersey,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,26.15,14.34,8727.79
+2017-2021,NJ,New Jersey,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,9.86,18.74,8727.79
+2017-2021,NJ,New Jersey,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.08,5.87,8727.79
+2017-2021,NJ,New Jersey,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.3,6.42,8727.79
+2017-2021,NJ,New Jersey,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,12.21,7.24,8727.79
+2017-2021,NJ,New Jersey,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,29.83,10.33,8727.79
+2017-2021,NJ,New Jersey,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.64,7.87,8727.79
+2017-2021,NJ,New Jersey,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.94,6.18,8727.79
+2017-2021,NM,New Mexico,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,4.48,18.07,3976.59
+2017-2021,NM,New Mexico,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,19.37,29.17,3976.59
+2017-2021,NM,New Mexico,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,32.27,41.16,3976.59
+2017-2021,NM,New Mexico,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,14.81,13.85,3976.59
+2017-2021,NM,New Mexico,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,23.11,14.38,3976.59
+2017-2021,NM,New Mexico,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,33.97,17.3,3976.59
+2017-2021,NM,New Mexico,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,64.62,22.83,3976.59
+2017-2021,NM,New Mexico,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.73,19.36,3976.59
+2017-2021,NM,New Mexico,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,8.17,19.23,3976.59
+2017-2021,NY,New York,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.59,7.05,12962.26
+2017-2021,NY,New York,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,24.09,13.84,12962.26
+2017-2021,NY,New York,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,12.53,20.17,12962.26
+2017-2021,NY,New York,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.69,6.14,12962.26
+2017-2021,NY,New York,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.69,7.22,12962.26
+2017-2021,NY,New York,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,17.59,8.58,12962.26
+2017-2021,NY,New York,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,18.44,9.01,12962.26
+2017-2021,NY,New York,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.35,7.94,12962.26
+2017-2021,NY,New York,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.18,6.76,12962.26
+2017-2021,NC,North Carolina,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.11,9.22,8430.57
+2017-2021,NC,North Carolina,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,26.38,16.82,8430.57
+2017-2021,NC,North Carolina,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,19.77,23.2,8430.57
+2017-2021,NC,North Carolina,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,13.04,8.14,8430.57
+2017-2021,NC,North Carolina,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,21.35,8.71,8430.57
+2017-2021,NC,North Carolina,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,27.54,12.41,8430.57
+2017-2021,NC,North Carolina,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,33.16,13.71,8430.57
+2017-2021,NC,North Carolina,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.98,10.78,8430.57
+2017-2021,NC,North Carolina,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.15,9.72,8430.57
+2017-2021,ND,North Dakota,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.87,20.24,1956.84
+2017-2021,ND,North Dakota,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,15.34,27.79,1956.84
+2017-2021,ND,North Dakota,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,21.5,28.66,1956.84
+2017-2021,ND,North Dakota,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.48,9.11,1956.84
+2017-2021,ND,North Dakota,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.37,10.65,1956.84
+2017-2021,ND,North Dakota,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,19.04,11.51,1956.84
+2017-2021,ND,North Dakota,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,14.32,18.08,1956.84
+2017-2021,ND,North Dakota,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.32,19.82,1956.84
+2017-2021,ND,North Dakota,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,3.44,13.94,1956.84
+2017-2021,OH,Ohio,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.23,8.08,6668.82
+2017-2021,OH,Ohio,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,20.93,14.25,6668.82
+2017-2021,OH,Ohio,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,15.64,21.95,6668.82
+2017-2021,OH,Ohio,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.65,6.81,6668.82
+2017-2021,OH,Ohio,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,18.28,7.78,6668.82
+2017-2021,OH,Ohio,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,21.94,10.7,6668.82
+2017-2021,OH,Ohio,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,11.54,9.23,6668.82
+2017-2021,OH,Ohio,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.33,9.24,6668.82
+2017-2021,OH,Ohio,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.41,8.42,6668.82
+2017-2021,OK,Oklahoma,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,3.16,13.88,4130.5
+2017-2021,OK,Oklahoma,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,18.65,20.72,4130.5
+2017-2021,OK,Oklahoma,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,26.42,25.16,4130.5
+2017-2021,OK,Oklahoma,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,14.28,8.94,4130.5
+2017-2021,OK,Oklahoma,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.28,9.76,4130.5
+2017-2021,OK,Oklahoma,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,30.79,12.48,4130.5
+2017-2021,OK,Oklahoma,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,34.22,15.53,4130.5
+2017-2021,OK,Oklahoma,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.57,13.77,4130.5
+2017-2021,OK,Oklahoma,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.9,12.02,4130.5
+2017-2021,OR,Oregon,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,3.03,9.41,8423.06
+2017-2021,OR,Oregon,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,26.22,16.74,8423.06
+2017-2021,OR,Oregon,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,15.21,24.58,8423.06
+2017-2021,OR,Oregon,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,10.05,8.15,8423.06
+2017-2021,OR,Oregon,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,23.76,9.8,8423.06
+2017-2021,OR,Oregon,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,22.29,11.49,8423.06
+2017-2021,OR,Oregon,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,19.33,11.72,8423.06
+2017-2021,OR,Oregon,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.68,10.09,8423.06
+2017-2021,OR,Oregon,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.23,11.78,8423.06
+2017-2021,PA,Pennsylvania,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.08,8.16,3948.64
+2017-2021,PA,Pennsylvania,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,22.73,15.11,3948.64
+2017-2021,PA,Pennsylvania,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,16.37,21.7,3948.64
+2017-2021,PA,Pennsylvania,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,8.69,7.0,3948.64
+2017-2021,PA,Pennsylvania,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.01,8.43,3948.64
+2017-2021,PA,Pennsylvania,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,19.72,10.04,3948.64
+2017-2021,PA,Pennsylvania,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,11.73,9.77,3948.64
+2017-2021,PA,Pennsylvania,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.61,9.4,3948.64
+2017-2021,PA,Pennsylvania,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.54,8.08,3948.64
+2017-2021,RI,Rhode Island,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,0.9,5.32,18803.92
+2017-2021,RI,Rhode Island,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,27.99,14.24,18803.92
+2017-2021,RI,Rhode Island,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,11.09,20.9,18803.92
+2017-2021,RI,Rhode Island,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.94,5.6,18803.92
+2017-2021,RI,Rhode Island,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,21.68,8.46,18803.92
+2017-2021,RI,Rhode Island,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,16.81,8.38,18803.92
+2017-2021,RI,Rhode Island,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,16.54,7.01,18803.92
+2017-2021,RI,Rhode Island,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.96,7.11,18803.92
+2017-2021,RI,Rhode Island,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.91,9.24,18803.92
+2017-2021,SC,South Carolina,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.35,11.33,5481.33
+2017-2021,SC,South Carolina,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,25.03,19.1,5481.33
+2017-2021,SC,South Carolina,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,23.25,25.77,5481.33
+2017-2021,SC,South Carolina,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,14.81,9.57,5481.33
+2017-2021,SC,South Carolina,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.56,9.99,5481.33
+2017-2021,SC,South Carolina,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,30.5,13.77,5481.33
+2017-2021,SC,South Carolina,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,41.22,16.87,5481.33
+2017-2021,SC,South Carolina,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,7.54,12.4,5481.33
+2017-2021,SC,South Carolina,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,7.02,10.7,5481.33
+2017-2021,SD,South Dakota,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,4.36,16.95,1950.0
+2017-2021,SD,South Dakota,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,17.79,24.51,1950.0
+2017-2021,SD,South Dakota,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,24.3,27.79,1950.0
+2017-2021,SD,South Dakota,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,11.51,9.84,1950.0
+2017-2021,SD,South Dakota,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.68,10.17,1950.0
+2017-2021,SD,South Dakota,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,27.99,13.36,1950.0
+2017-2021,SD,South Dakota,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,22.72,15.53,1950.0
+2017-2021,SD,South Dakota,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,7.3,16.97,1950.0
+2017-2021,SD,South Dakota,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.2,14.19,1950.0
+2017-2021,TN,Tennessee,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.67,7.66,8920.68
+2017-2021,TN,Tennessee,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,22.5,14.85,8920.68
+2017-2021,TN,Tennessee,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,19.73,22.63,8920.68
+2017-2021,TN,Tennessee,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,14.08,8.5,8920.68
+2017-2021,TN,Tennessee,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,20.0,8.64,8920.68
+2017-2021,TN,Tennessee,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,28.11,12.32,8920.68
+2017-2021,TN,Tennessee,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,14.28,9.69,8920.68
+2017-2021,TN,Tennessee,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.63,9.49,8920.68
+2017-2021,TN,Tennessee,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,6.41,9.94,8920.68
+2017-2021,TX,Texas,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,4.94,13.14,12901.97
+2017-2021,TX,Texas,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,21.28,20.19,12901.97
+2017-2021,TX,Texas,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,20.96,27.24,12901.97
+2017-2021,TX,Texas,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,19.57,10.51,12901.97
+2017-2021,TX,Texas,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,16.93,8.89,12901.97
+2017-2021,TX,Texas,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,26.96,12.68,12901.97
+2017-2021,TX,Texas,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,49.32,14.85,12901.97
+2017-2021,TX,Texas,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,7.23,13.91,12901.97
+2017-2021,TX,Texas,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.53,11.15,12901.97
+2017-2021,UT,Utah,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,3.3,10.16,9663.55
+2017-2021,UT,Utah,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,18.87,16.17,9663.55
+2017-2021,UT,Utah,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,12.85,22.45,9663.55
+2017-2021,UT,Utah,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.34,6.69,9663.55
+2017-2021,UT,Utah,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,15.47,7.19,9663.55
+2017-2021,UT,Utah,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,18.78,10.02,9663.55
+2017-2021,UT,Utah,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,15.8,10.43,9663.55
+2017-2021,UT,Utah,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,4.48,10.7,9663.55
+2017-2021,UT,Utah,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,3.83,8.96,9663.55
+2017-2021,VT,Vermont,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.88,11.92,1613.03
+2017-2021,VT,Vermont,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,29.29,20.69,1613.03
+2017-2021,VT,Vermont,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,20.13,29.95,1613.03
+2017-2021,VT,Vermont,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,6.84,8.64,1613.03
+2017-2021,VT,Vermont,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,21.84,11.96,1613.03
+2017-2021,VT,Vermont,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,19.84,11.4,1613.03
+2017-2021,VT,Vermont,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,7.64,11.35,1613.03
+2017-2021,VT,Vermont,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.8,13.27,1613.03
+2017-2021,VT,Vermont,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,4.97,11.16,1613.03
+2017-2021,VA,Virginia,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.01,9.76,9151.16
+2017-2021,VA,Virginia,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,23.06,18.03,9151.16
+2017-2021,VA,Virginia,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,18.42,26.28,9151.16
+2017-2021,VA,Virginia,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,12.68,9.43,9151.16
+2017-2021,VA,Virginia,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.95,10.04,9151.16
+2017-2021,VA,Virginia,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,22.17,12.24,9151.16
+2017-2021,VA,Virginia,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,30.38,13.41,9151.16
+2017-2021,VA,Virginia,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,6.06,11.2,9151.16
+2017-2021,VA,Virginia,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,4.77,11.79,9151.16
+2017-2021,WA,Washington,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,3.44,8.94,10326.42
+2017-2021,WA,Washington,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,24.02,15.51,10326.42
+2017-2021,WA,Washington,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,11.96,22.87,10326.42
+2017-2021,WA,Washington,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,9.79,7.22,10326.42
+2017-2021,WA,Washington,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.41,8.09,10326.42
+2017-2021,WA,Washington,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,19.17,9.73,10326.42
+2017-2021,WA,Washington,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,26.64,12.07,10326.42
+2017-2021,WA,Washington,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.22,9.41,10326.42
+2017-2021,WA,Washington,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.39,9.78,10326.42
+2017-2021,WV,West Virginia,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.37,15.31,1906.09
+2017-2021,WV,West Virginia,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,20.45,25.61,1906.09
+2017-2021,WV,West Virginia,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,19.82,37.1,1906.09
+2017-2021,WV,West Virginia,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,14.76,12.45,1906.09
+2017-2021,WV,West Virginia,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,21.98,13.36,1906.09
+2017-2021,WV,West Virginia,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,32.52,17.22,1906.09
+2017-2021,WV,West Virginia,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,8.39,13.36,1906.09
+2017-2021,WV,West Virginia,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.17,16.58,1906.09
+2017-2021,WV,West Virginia,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,8.78,18.19,1906.09
+2017-2021,WI,Wisconsin,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,1.51,7.09,5472.56
+2017-2021,WI,Wisconsin,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,20.93,11.79,5472.56
+2017-2021,WI,Wisconsin,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,16.27,17.37,5472.56
+2017-2021,WI,Wisconsin,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.83,5.06,5472.56
+2017-2021,WI,Wisconsin,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.73,6.85,5472.56
+2017-2021,WI,Wisconsin,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,18.94,8.0,5472.56
+2017-2021,WI,Wisconsin,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,11.76,8.6,5472.56
+2017-2021,WI,Wisconsin,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,5.72,7.68,5472.56
+2017-2021,WI,Wisconsin,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,3.84,6.13,5472.56
+2017-2021,WY,Wyoming,5-year ACS,SDOH,Crowding among housing units,%,Percentage,SDOH,CROWD,Percent,Crowding,2.79,16.97,2635.62
+2017-2021,WY,Wyoming,5-year ACS,SDOH,Housing cost burden among households,%,Percentage,SDOH,HCOST,Percent,Housing cost burden,18.87,26.6,2635.62
+2017-2021,WY,Wyoming,5-year ACS,SDOH,No broadband internet subscription among households,%,Percentage,SDOH,BROAD,Percent,No broadband,17.72,41.95,2635.62
+2017-2021,WY,Wyoming,5-year ACS,SDOH,No high school diploma among adults aged 25 years or older,%,Percentage,SDOH,NOHSDP,Percent,No high school diploma,7.34,13.1,2635.62
+2017-2021,WY,Wyoming,5-year ACS,SDOH,Persons aged 65 years or older,%,Percentage,SDOH,AGE65,Percent,Aged 65 years or older,19.84,14.99,2635.62
+2017-2021,WY,Wyoming,5-year ACS,SDOH,Persons living below 150% of the poverty level,%,Percentage,SDOH,POV150,Percent,Poverty,18.66,12.38,2635.62
+2017-2021,WY,Wyoming,5-year ACS,SDOH,Persons of racial or ethnic minority status,%,Percentage,SDOH,REMNRTY,Percent,Racial or ethnic minority status,14.73,17.0,2635.62
+2017-2021,WY,Wyoming,5-year ACS,SDOH,Single-parent households,%,Percentage,SDOH,SNGPNT,Percent,Single-parent households,3.84,16.55,2635.62
+2017-2021,WY,Wyoming,5-year ACS,SDOH,Unemployment among people 16 years and older in the labor force,%,Percentage,SDOH,UNEMP,Percent,Unemployment,5.48,16.7,2635.62

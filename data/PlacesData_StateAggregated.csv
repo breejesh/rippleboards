@@ -1,0 +1,53 @@
+StateAbbr,StateDesc,DataSource,Category,Measure,Data_Value_Unit,Data_Value_Type,Data_Value_Footnote_Symbol,Data_Value_Footnote,TotalPopulation,TotalPop18plus,CategoryID,MeasureId,DataValueTypeID,Short_Question_Text,Year,Data_Value,Low_Confidence_Limit,High_Confidence_Limit
+AL,Alabama,BRFSS,Health Outcomes,Arthritis among adults,%,Age-adjusted prevalence,,,"36,558","28,282",HLTHOUT,ARTHRITIS,AgeAdjPrv,Arthritis,2022.88,27.68,24.53,30.94
+AK,Alaska,BRFSS,Disability,Independent living disability among adults,%,Crude prevalence,,,844,663,DISABLT,INDEPLIVE,CrdPrv,Independent Living Disability,2022.88,24.25,21.35,27.27
+AZ,Arizona,BRFSS,Health Outcomes,High cholesterol among adults who have ever been screened,%,Age-adjusted prevalence,,,"109,175","82,055",HLTHOUT,HIGHCHOL,AgeAdjPrv,High Cholesterol,2022.88,24.96,22.33,27.69
+AR,Arkansas,BRFSS,Health Outcomes,Arthritis among adults,%,Crude prevalence,,,"16,945","13,230",HLTHOUT,ARTHRITIS,CrdPrv,Arthritis,2022.88,27.39,24.21,30.68
+CA,California,BRFSS,Disability,Any disability among adults,%,Crude prevalence,,,"254,407","206,190",DISABLT,DISABILITY,CrdPrv,Any Disability,2022.88,24.37,21.61,27.24
+CO,Colorado,BRFSS,Health Outcomes,Arthritis among adults,%,Crude prevalence,,,"2,513","2,096",HLTHOUT,ARTHRITIS,CrdPrv,Arthritis,2022.85,24.88,22.08,27.8
+CT,Connecticut,BRFSS,Prevention,Taking medicine to control high blood pressure among adults with high blood pressure,%,Age-adjusted prevalence,,,"327,651","256,229",PREVENT,BPMED,AgeAdjPrv,High Blood Pressure Medication,2022.88,24.26,22.63,25.94
+DE,Delaware,BRFSS,Health-Related Social Needs,Received food stamps in the past 12 months among adults,%,Crude prevalence,,,"578,592","456,332",SOCLNEED,FOODSTAMP,CrdPrv,Food Stamps,2022.88,25.1,22.59,27.7
+DC,District of Columbia,BRFSS,Prevention,Colorectal cancer screening among adults aged 45–75 years,%,Age-adjusted prevalence,,,"678,972","552,380",PREVENT,COLON_SCREEN,AgeAdjPrv,Colorectal Cancer Screening,2022.88,22.79,20.28,25.34
+FL,Florida,BRFSS,Health Outcomes,Diagnosed diabetes among adults,%,Crude prevalence,,,"643,979","528,274",HLTHOUT,DIABETES,CrdPrv,Diabetes,2022.85,27.15,24.43,29.92
+GA,Georgia,BRFSS,Disability,Hearing disability among adults,%,Crude prevalence,,,"127,098","96,984",DISABLT,HEARING,CrdPrv,Hearing Disability,2022.88,26.74,23.69,29.89
+HI,Hawaii,BRFSS,Health Outcomes,Obesity among adults,%,Age-adjusted prevalence,,,81,75,HLTHOUT,OBESITY,AgeAdjPrv,Obesity,2022.88,24.03,21.66,26.48
+ID,Idaho,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"90,400","67,958",HLTHOUT,STROKE,CrdPrv,Stroke,2022.88,24.02,21.14,27.01
+IL,Illinois,BRFSS,Health Outcomes,Arthritis among adults,%,Crude prevalence,,,"6,294","5,228",HLTHOUT,ARTHRITIS,CrdPrv,Arthritis,2022.88,24.83,21.78,28.02
+IN,Indiana,BRFSS,Health Outcomes,Stroke among adults,%,Age-adjusted prevalence,,,"26,460","20,399",HLTHOUT,STROKE,AgeAdjPrv,Stroke,2022.88,25.48,22.57,28.49
+IA,Iowa,BRFSS,Health Outcomes,Depression among adults,%,Crude prevalence,,,"6,458","5,059",HLTHOUT,DEPRESSION,CrdPrv,Depression,2022.88,24.58,21.77,27.49
+KS,Kansas,BRFSS,Health Outcomes,Arthritis among adults,%,Crude prevalence,,,"7,838","5,838",HLTHOUT,ARTHRITIS,CrdPrv,Arthritis,2022.88,24.58,21.71,27.57
+KY,Kentucky,BRFSS,Prevention,Visited dentist or dental clinic in the past year among adults,%,Age-adjusted prevalence,,,"37,304","28,972",PREVENT,DENTAL,AgeAdjPrv,Dental Visit,2022.0,50.18,44.41,55.84
+LA,Louisiana,BRFSS,Disability,Hearing disability among adults,%,Crude prevalence,,,"4,768","3,710",DISABLT,HEARING,CrdPrv,Hearing Disability,2022.88,28.59,25.44,31.84
+ME,Maine,BRFSS,Health Outcomes,Current asthma among adults,%,Crude prevalence,,,"56,526","47,589",HLTHOUT,CASTHMA,CrdPrv,Current Asthma,2022.88,25.42,22.9,28.04
+MD,Maryland,BRFSS,Health Outcomes,Current asthma among adults,%,Crude prevalence,,,"176,639","137,462",HLTHOUT,CASTHMA,CrdPrv,Current Asthma,2022.88,24.78,22.45,27.2
+MA,Massachusetts,BRFSS,Health Outcomes,Obesity among adults,%,Crude prevalence,,,"866,866","690,404",HLTHOUT,OBESITY,CrdPrv,Obesity,2022.88,24.2,21.82,26.7
+MI,Michigan,BRFSS,Health Outcomes,Stroke among adults,%,Age-adjusted prevalence,,,"24,409","20,323",HLTHOUT,STROKE,AgeAdjPrv,Stroke,2022.88,25.62,22.73,28.63
+MN,Minnesota,BRFSS,Health Outcomes,Arthritis among adults,%,Crude prevalence,,,"372,441","284,448",HLTHOUT,ARTHRITIS,CrdPrv,Arthritis,2022.88,23.91,21.25,26.7
+MS,Mississippi,BRFSS,Prevention,Visited dentist or dental clinic in the past year among adults,%,Age-adjusted prevalence,,,"15,777","11,936",PREVENT,DENTAL,AgeAdjPrv,Dental Visit,2022.88,27.06,23.9,30.31
+MO,Missouri,BRFSS,Prevention,Mammography use among women aged 50-74 years,%,Crude prevalence,,,"82,984","65,388",PREVENT,MAMMOUSE,CrdPrv,Mammography,2022.88,26.12,22.98,29.38
+MT,Montana,BRFSS,Health-Related Social Needs,Lack of social and emotional support among adults,%,Crude prevalence,,,772,586,SOCLNEED,EMOTIONSPT,CrdPrv,Lack of Social/Emotional Support,2022.88,24.23,21.33,27.27
+NE,Nebraska,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"5,492","4,162",HLTHOUT,STROKE,CrdPrv,Stroke,2022.88,23.72,20.96,26.61
+NV,Nevada,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"54,293","40,093",HLTHOUT,STROKE,CrdPrv,Stroke,2022.88,25.39,22.29,28.63
+NH,New Hampshire,BRFSS,Prevention,Current lack of health insurance among adults aged 18-64 years,%,Crude prevalence,,,"427,354","344,717",PREVENT,ACCESS2,CrdPrv,Health Insurance,2022.88,23.29,20.89,25.83
+NJ,New Jersey,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"705,472","568,317",HLTHOUT,STROKE,CrdPrv,Stroke,2022.88,23.51,21.17,25.96
+NM,New Mexico,BRFSS,Health Outcomes,Arthritis among adults,%,Crude prevalence,,,"3,825","3,386",HLTHOUT,ARTHRITIS,CrdPrv,Arthritis,2022.88,25.53,22.42,28.76
+NY,New York,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"81,325","64,334",HLTHOUT,STROKE,CrdPrv,Stroke,2022.88,24.58,21.95,27.33
+NC,North Carolina,BRFSS,Health Outcomes,Obesity among adults,%,Crude prevalence,,,"36,473","29,341",HLTHOUT,OBESITY,CrdPrv,Obesity,2022.88,25.97,22.98,29.08
+ND,North Dakota,BRFSS,Health Risk Behaviors,Binge drinking among adults,%,Crude prevalence,,,"2,163","1,737",RISKBEH,BINGE,CrdPrv,Binge Drinking,2022.88,24.12,21.28,27.11
+OH,Ohio,BRFSS,Health Outcomes,Obesity among adults,%,Crude prevalence,,,"43,777","33,846",HLTHOUT,OBESITY,CrdPrv,Obesity,2022.88,25.5,22.7,28.42
+OK,Oklahoma,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"5,018","3,798",HLTHOUT,STROKE,CrdPrv,Stroke,2022.88,26.61,23.52,29.82
+OR,Oregon,BRFSS,Health Outcomes,Arthritis among adults,%,Crude prevalence,,,"23,296","20,052",HLTHOUT,ARTHRITIS,CrdPrv,Arthritis,2022.85,26.42,23.53,29.4
+PA,Pennsylvania,BRFSS,Health Risk Behaviors,Short sleep duration among adults,%,Crude prevalence,,,"319,091","258,654",RISKBEH,SLEEP,CrdPrv,Short Sleep Duration,2022.0,51.39,46.14,56.43
+RI,Rhode Island,BRFSS,Health Outcomes,Depression among adults,%,Age-adjusted prevalence,,,"129,982","110,479",HLTHOUT,DEPRESSION,AgeAdjPrv,Depression,2022.88,24.09,21.72,26.59
+SC,South Carolina,BRFSS,Health Outcomes,Obesity among adults,%,Crude prevalence,,,"38,874","29,998",HLTHOUT,OBESITY,CrdPrv,Obesity,2022.88,26.85,24.04,29.75
+SD,South Dakota,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"19,591","13,979",HLTHOUT,STROKE,CrdPrv,Stroke,2022.85,26.81,23.82,29.88
+TN,Tennessee,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"712,334","566,997",HLTHOUT,STROKE,CrdPrv,Stroke,2022.85,28.8,25.55,32.15
+TX,Texas,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,*,Estimates suppressed for population less than 50,"393,193","285,194",HLTHOUT,STROKE,CrdPrv,Stroke,2022.85,27.21,24.25,30.25
+US,United States,BRFSS,Disability,Self-care disability among adults,%,Age-adjusted prevalence,#,The estimates are based on 39 states and DC.,"334,914,895","262,083,034",DISABLT,SELFCARE,AgeAdjPrv,Self-care Disability,2022.88,24.15,23.88,24.44
+UT,Utah,BRFSS,Health Outcomes,Arthritis among adults,%,Crude prevalence,,,"20,609","15,429",HLTHOUT,ARTHRITIS,CrdPrv,Arthritis,2022.88,23.12,20.48,25.88
+VT,Vermont,BRFSS,Prevention,Colorectal cancer screening among adults aged 45–75 years,%,Crude prevalence,,,"37,720","31,723",PREVENT,COLON_SCREEN,CrdPrv,Colorectal Cancer Screening,2022.85,25.39,22.87,28.0
+VA,Virginia,BRFSS,Health Outcomes,Diagnosed diabetes among adults,%,Crude prevalence,,,"31,396","25,190",HLTHOUT,DIABETES,CrdPrv,Diabetes,2022.88,25.66,22.76,28.68
+WA,Washington,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"86,267","71,614",HLTHOUT,STROKE,CrdPrv,Stroke,2022.85,25.58,23.13,28.11
+WV,West Virginia,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"16,500","12,975",HLTHOUT,STROKE,CrdPrv,Stroke,2022.88,28.1,24.8,31.51
+WI,Wisconsin,BRFSS,Health Outcomes,Stroke among adults,%,Crude prevalence,,,"17,092","14,468",HLTHOUT,STROKE,CrdPrv,Stroke,2022.88,24.64,21.94,27.45
+WY,Wyoming,BRFSS,Health Outcomes,Stroke among adults,%,Age-adjusted prevalence,,,"79,941","61,379",HLTHOUT,STROKE,AgeAdjPrv,Stroke,2022.85,25.1,22.22,28.09

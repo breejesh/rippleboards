@@ -1,0 +1,27 @@
+.map-selector {
+  background: #ffffff;
+  border: 1px solid #e0ebf2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(14, 54, 76, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem;
+}
+
+.map-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.controls { margin-top: 0.5rem; }
+
+.locations-grid {
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 0.35rem;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.location-btn { text-align: left; }

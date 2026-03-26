@@ -1,0 +1,67 @@
+﻿Premature Age-Adjusted Mortality by State
+"Black or African American (Non-Hispanic/Latino), Both Sexes, Ages <75, 2021-2023"
+
+Sorted by Rate
+
+State,FIPS,"Premature Age-Adjusted Mortality Rate - deaths per 100,000(1)"
+"United States",00000,598
+"Wisconsin",55000,802
+"West Virginia",54000,801
+"District of Columbia",11001,790
+"Missouri",29000,755
+"Arkansas",05000,738
+"Oklahoma",40000,729
+"Louisiana",22000,720
+"Tennessee",47000,719
+"Mississippi",28000,715
+"Kentucky",21000,709
+"Michigan",26000,705
+"Illinois",17000,699
+"Ohio",39000,687
+"Alabama",01000,685
+"Indiana",18000,684
+"Montana",30000,678
+"Iowa",19000,677
+"Kansas",20000,669
+"Nevada",32000,665
+"Oregon",41000,648
+"Pennsylvania",42000,647
+"South Carolina",45000,639
+"New Mexico",35000,624
+"California",06000,600
+"North Carolina",37000,597
+"Arizona",04000,581
+"Nebraska",31000,577
+"Wyoming",56000,575
+"Texas",48000,554
+"Georgia",13000,545
+"Virginia",51000,545
+"New Jersey",34000,540
+"Washington",53000,540
+"Minnesota",27000,536
+"Colorado",08000,535
+"Delaware",10000,526
+"Florida",12000,524
+"Maryland",24000,499
+"Idaho",16000,475
+"Connecticut",09000,473
+"New York",36000,469
+"Utah",49000,460
+"Maine",23000,454
+"Alaska",02900,439
+"Vermont",50000,406
+"Massachusetts",25000,398
+"North Dakota",38000,397
+"Rhode Island",44000,396
+"New Hampshire",33000,357
+"South Dakota",46000,333
+"Hawaii",15000,291
+"Puerto Rico",72001,NA
+
+Suggested Citation:
+HDPulse: An Ecosystem of Minority Health and Health Disparities Resources. National Institute on Minority Health and Health Disparities. Created 3/26/2026. Available from https://hdpulse.nimhd.nih.gov
+
+Notes:
+"1Source: Premature age-adjusted mortality data (number of deaths among residents under age 75 per 100,000 population (age-adjusted))are calculated by the County Health Rankings [ https://www.countyhealthrankings.org/explore-health-rankings/county-health-rankings-model/health-outcomes/length-of-life/premature-age-adjusted-mortality ] site using data from the National Center for Health Statistics and the National Vital Statistics System. "
+
+NA: Data not available values reflect unreliable or missing data.
