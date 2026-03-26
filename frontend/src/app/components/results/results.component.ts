@@ -87,7 +87,12 @@ export class ResultsComponent implements OnInit, OnChanges {
     const projectedSlope = -Math.abs(reductionPct * 0.8);  // Negative slope - mortality decreases
 
     this.baselineTrajectory = this.years.map((_, idx) => baselineRate + idx * baselineSlope);
-    this.projectedTrajectory = this.years.map((_, idx) => baselineRate + idx * projectedSlope);
+
+    // Apply mortality reduction as an absolute change so the projected series' first
+    // value reflects the immediate post-intervention mortality (matches outer ripple)
+    const reductionPctAbs = reductionPct / 100; // e.g. 0.12 for 12%
+    const reductionAbsolute = baselineRate * reductionPctAbs;
+    this.projectedTrajectory = this.years.map((_, idx) => (baselineRate + idx * projectedSlope) - reductionAbsolute);
 
     this.confidenceUpper = this.projectedTrajectory.map((value, idx) => value + (24 - idx * 0.9));
     this.confidenceLower = this.projectedTrajectory.map((value, idx) => value - (24 - idx * 0.9));

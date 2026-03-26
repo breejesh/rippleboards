@@ -58,14 +58,14 @@ export class AppComponent {
       label: 'Education', 
       icon: '📚',
       description: 'Educational attainment and literacy programs',
-      policyMeaning: '0%: Current funding | 100%: Comprehensive literacy initiative'
+      policyMeaning: '0%: No change | 100%: Subsidized Quality Education'
     },
     { 
       id: 'employment_initiative', 
       label: 'Employment', 
       icon: '💼',
       description: 'Job skills and employment support',
-      policyMeaning: '0%: Job matching only | 100%: Full employment guarantee'
+      policyMeaning: '0%: Job matching only | 100%: Employment guarantee'
     },
     { 
       id: 'healthcare_access', 

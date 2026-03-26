@@ -105,15 +105,15 @@
           </div>
           
           <div *ngIf="!loadingMeasures && stateMeasures.length > 0" class="factors-compact-grid">
-            <div *ngFor="let measure of stateMeasures" 
-                 class="factor-compact-card">
-              <div class="factor-compact-bar" 
-                   [style.background-color]="getMeasureColor(measure.value, measureValues)">
-              </div>
-              <div class="factor-compact-value">{{ measure.value.toFixed(0) }}%</div>
-              <div class="factor-compact-name">{{ measure.measure }}</div>
+              <div *ngFor="let measure of stateMeasures" 
+                class="factor-compact-card">
+                <div class="factor-compact-bar" 
+                  [style.background-color]="getMeasureColor(measure.value, measureValues)">
+                </div>
+                <div class="factor-compact-value">{{ (measure.value || 0).toFixed(0) }}%</div>
+                <div class="factor-compact-name">{{ measure.name || measure.measure || measure.id }}</div>
            
-            </div>
+              </div>
           </div>
           
           <div *ngIf="!loadingMeasures && stateMeasures.length === 0" class="no-data">

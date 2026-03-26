@@ -4,7 +4,8 @@
   "scripts": {
     "serve": "ng serve --port 4200",
     "build": "ng build --configuration production",
-    "ng": "ng"
+    "ng": "ng",
+    "ship": "ng build --configuration production && firebase deploy --only hosting"
   },
   "private": true,
   "dependencies": {
