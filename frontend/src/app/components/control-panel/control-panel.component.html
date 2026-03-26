@@ -9,6 +9,14 @@
     Prototype controls for demo simulation.
   </div>
 
+  <div class="stack-section">
+    <h3>Map Measure</h3>
+    <label for="measureSelect">Color map by measure</label>
+    <select id="measureSelect" [(ngModel)]="selectedMeasure" (change)="measureChanged.emit(selectedMeasure)">
+      <option *ngFor="let m of measures" [value]="m">{{ m }}</option>
+    </select>
+  </div>
+
   <div class="stack-section" [class.disabled]="!selectedLocation">
     <h3>Clinical</h3>
     <label for="subsidyRange" class="stack-label">Medication Subsidy %</label>
@@ -65,4 +73,11 @@
   <div class="micro-note">
     <p>Adjust settings, then run simulation.</p>
   </div>
+
+  <button 
+    (click)="runSimulation()" 
+    [disabled]="!selectedLocation"
+    class="run-btn">
+    Run Simulation
+  </button>
 </div>

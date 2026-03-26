@@ -2,123 +2,145 @@
   <header class="app-header">
     <div class="header-content">
       <div>
-        <p class="eyebrow">Policy Simulation Sandbox</p>
         <h1>RippleBoards</h1>
-        <p class="tagline">Model policy impact in minutes.</p>
+        <p class="tagline">Decision Support System for Policy Makers</p>
       </div>
-      <div class="selected-location-badge" *ngIf="selectedLocation">
-          <span class="badge-label">Active Geography</span>
-          <span class="badge-location">{{ selectedLocation }}</span>
+      <div class="state-selector">
+        <button 
+          class="state-selector-btn"
+          (click)="showStateDropdown = !showStateDropdown">
+          <span class="selector-label">State:</span>
+          <span class="selector-value">{{ selectedState || 'Select a state' }}</span>
+          <span class="selector-icon">{{ showStateDropdown ? '▲' : '▼' }}</span>
+        </button>
+        
+        <div class="state-dropdown" *ngIf="showStateDropdown">
+          <input 
+            type="text"
+            class="state-search-input"
+            placeholder="Search states..."
+            [(ngModel)]="stateSearch"
+            (keyup.escape)="showStateDropdown = false">
+          
+          <div class="state-list">
+            <div 
+              *ngFor="let state of filteredStates"
+              class="state-option"
+              [class.selected]="state === selectedState"
+              (click)="onStateSelected(state)">
+              {{ state }}
+            </div>
+            <div *ngIf="filteredStates.length === 0" class="state-option disabled">
+              No states found
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <main class="ux-layout">
+  <main class="ux-layout three-column">
+    <!-- Left Panel: Intervention Sliders -->
     <aside class="left-pane">
       <div class="left-pane-scroll">
-        <div class="step-card">
-          <button
-            class="step-header"
-            type="button"
-            (click)="toggleStep('region')"
-            [attr.aria-expanded]="isRegionStepOpen">
-            <div class="step-title">
-              <span class="step-number">1</span>
-              <div>
-                <h2>Select Region</h2>
-                <p *ngIf="isRegionStepOpen">Search by location, state, or ZIP.</p>
-                <p class="step-selection">Current: {{ getRegionSelectionSummary() }}</p>
+        <div class="intervention-card">
+          <div class="panel-head">
+            <h2>Interventions</h2>
+            <p>Allocate resources</p>
+          </div>
+          
+          <div class="interventions-sliders">
+            <div *ngFor="let intervention of interventions" class="intervention-slider-group">
+              <div class="intervention-slider-header">
+                <span class="intervention-icon">{{ intervention.icon }}</span>
+                <span class="intervention-label">{{ intervention.label }}: <span class="intervention-value-inline" [style.color]="getInterventionValueColor(interventionValues[intervention.id] || 0)">{{ (interventionValues[intervention.id] || 0).toFixed(0) }}%</span></span>
+              </div>
+              <p class="intervention-description">{{ intervention.policyMeaning }}</p>
+              
+              <div class="intervention-slider-container">
+                <input 
+                  type="range"
+                  min="0"
+                  max="100"
+                  [(ngModel)]="interventionValues[intervention.id]"
+                  (input)="onInterventionChange()"
+                  [disabled]="!selectedState"
+                  class="intervention-slider">
               </div>
             </div>
-            <div class="step-header-meta">
-              <span class="step-toggle" aria-hidden="true">{{ isRegionStepOpen ? 'Hide' : 'Show' }}</span>
-            </div>
-          </button>
-
-          <div class="step-body" [class.collapsed]="!isRegionStepOpen">
-            <app-map (locationSelected)="onLocationSelect($event)"></app-map>
           </div>
-        </div>
-
-        <div class="step-card">
-          <button
-            class="step-header"
-            type="button"
-            (click)="toggleStep('policy')"
-            [attr.aria-expanded]="isPolicyStepOpen">
-            <div class="step-title">
-              <span class="step-number">2</span>
-              <div>
-                <h2>Configure Policy Stack</h2>
-                <p *ngIf="isPolicyStepOpen">Choose interventions and tune intensity.</p>
-                <p class="step-selection">Current: {{ getPolicySelectionSummary() }}</p>
-              </div>
-            </div>
-            <div class="step-header-meta">
-              <span class="step-toggle" aria-hidden="true">{{ isPolicyStepOpen ? 'Hide' : 'Show' }}</span>
-            </div>
+          
+          <button 
+            class="run-simulation-btn"
+            [disabled]="!selectedState || !hasActiveIntervention()"
+            (click)="runSimulation()">
+            <span class="btn-icon">▶</span>
+            Run Simulation
           </button>
-
-          <div class="step-body" [class.collapsed]="!isPolicyStepOpen">
-            <app-control-panel
-              #policyPanel
-              [selectedLocation]="selectedLocation"
-              (simulationResults)="onSimulationComplete($event)"
-              (scenarioCreated)="onScenarioCreated($event)"
-              (policyStackChanged)="onPolicyStackChange($event)">
-            </app-control-panel>
-          </div>
+          
+          <p class="helper-text" *ngIf="!selectedState">
+            Select a state on the map to enable simulation 👉
+          </p>
         </div>
-
-        <div class="next-step-row">
-          <button
-            class="next-step-btn"
-            type="button"
-            (click)="goToNextStep()"
-            [disabled]="!canGoNext()">
-            {{ getNextButtonLabel() }}
-          </button>
-        </div>
-
-      </div>
-
-      <div class="left-action-bar">
-        <div class="status-chips">
-          <span class="status-chip" [class.ok]="!!selectedLocation">Region {{ selectedLocation ? 'set' : 'missing' }}</span>
-          <span class="status-chip" [class.ok]="!!activePolicyStack">Policy {{ activePolicyStack ? 'ready' : 'draft' }}</span>
-        </div>
-        <button
-          class="run-persistent-btn"
-          (click)="policyPanel && policyPanel.runSimulation()"
-          [disabled]="!policyPanel || !policyPanel.canRunSimulation()"
-          [class.loading]="policyPanel && policyPanel.loading">
-          {{ policyPanel && policyPanel.loading ? 'Running simulation...' : 'Run Simulation' }}
-        </button>
       </div>
     </aside>
 
-    <section class="right-pane">
-      <div class="analysis-head">
-        <h2>3. Analyze Outcomes</h2>
-        <p>Trend, ripple, and ROI at a glance.</p>
+    <!-- Center: Map + Factors -->
+    <section class="map-center">
+      <div class="map-container">
+        <app-map (stateSelected)="onStateSelected($event)" [selectedState]="selectedState"></app-map>
       </div>
+      
+      <!-- Non-Medical Factors Display -->
+      <div class="factors-display-panel">
+        <div class="factors-display-header">
+          <h3>Non-Medical Factors (SDOH)</h3>
+          <p class="factors-display-subtitle">{{ selectedState || 'Select a state to view factors' }}</p>
+        </div>
+        
+        <div class="factors-display-grid">
+          <div *ngIf="loadingMeasures" class="loading-measures">
+            <div class="spinner-small"></div>
+            <p>Loading factors...</p>
+          </div>
+          
+          <div *ngIf="!loadingMeasures && stateMeasures.length > 0" class="factors-compact-grid">
+            <div *ngFor="let measure of stateMeasures" 
+                 class="factor-compact-card">
+              <div class="factor-compact-bar" 
+                   [style.background-color]="getMeasureColor(measure.value, measureValues)">
+              </div>
+              <div class="factor-compact-value">{{ measure.value.toFixed(0) }}%</div>
+              <div class="factor-compact-name">{{ measure.measure }}</div>
+           
+            </div>
+          </div>
+          
+          <div *ngIf="!loadingMeasures && stateMeasures.length === 0" class="no-data">
+            <p>No factor data available</p>
+          </div>
+        </div>
 
-      <app-results
-        [results]="simulationResults"
-        [policyStack]="activePolicyStack"
-        [selectedLocation]="selectedLocation">
-      </app-results>
+        <!-- Factor Changes After Simulation -->
+        <div class="factor-changes-section" *ngIf="simulationResults && simulationResults.factor_changes">
+          <div class="factor-changes-header">
+            <h4>Impact on Factors</h4>
+          </div>
+          <div class="factor-changes-grid">
+            <div *ngFor="let factorChange of simulationResults.factor_changes" class="factor-change-item">
+              <span class="change-name">{{ factorChange.factor | slice:0:15 }}</span>
+              <span class="change-value" [class.positive]="factorChange.change > 0" [class.negative]="factorChange.change < 0">
+                {{ factorChange.change > 0 ? '+' : '' }}{{ factorChange.change.toFixed(1) }}%
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="logic-flow">
-        <strong>Structural Logic:</strong>
-        <span class="logic-step">Action: {{ getPolicyActionLabel() }}</span>
-        <span class="logic-arrow">-&gt;</span>
-        <span class="logic-step">Mechanism: {{ getStructuralMechanism() }}</span>
-        <span class="logic-arrow">-&gt;</span>
-        <span class="logic-step">Midstream: Adherence up, avoidable ER down</span>
-        <span class="logic-arrow">-&gt;</span>
-        <span class="logic-step">Outcome: Premature mortality down</span>
-      </section>
+    <!-- Right Panel: Results -->
+    <section class="right-pane">
+      <app-results [results]="simulationResults" [selectedLocation]="selectedState" [interventionValues]="interventionValues" [currentStateMortality]="currentStateMortality"></app-results>
     </section>
   </main>
 </div>

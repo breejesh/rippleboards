@@ -1,109 +1,90 @@
 <div class="results-dashboard">
   <div class="results-header">
-    <p class="kicker">Computational Scaffold</p>
-    <h2>Policy Analytics</h2>
+    <h2>Policy Analysis</h2>
     <p>Quick readout for decision making.</p>
   </div>
 
   <div class="analytics-content">
-    <div class="viz-grid">
-      <section class="trend-panel" [class.is-empty]="!results">
-        <div class="trend-header">
-          <h3>Mortality Trajectory</h3>
-          <p>{{ selectedLocation || 'Awaiting simulation' }}</p>
-          <span class="pending-tag" *ngIf="!results">No simulation yet</span>
-        </div>
+    <!-- Mortality Trajectory Chart -->
+    <section class="trend-panel" [class.is-empty]="!results">
+      <div class="trend-header">
+        <h3>Mortality Trajectory</h3>
+        <p>{{ selectedLocation || 'Awaiting simulation' }}</p>
+        <span class="pending-tag" *ngIf="!results">No simulation yet</span>
+      </div>
 
-        <svg viewBox="0 0 620 320" class="trend-chart" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mortality trend chart">
-          <line x1="38" y1="270" x2="570" y2="270" class="axis"></line>
-          <line x1="38" y1="34" x2="38" y2="270" class="axis"></line>
+      <svg viewBox="0 0 620 320" class="trend-chart" #trendSVG xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mortality trend chart">
+        <line x1="38" y1="270" x2="570" y2="270" class="axis"></line>
+        <line x1="38" y1="34" x2="38" y2="270" class="axis"></line>
 
-          <path *ngIf="results" [attr.d]="getConfidenceAreaPath()" class="confidence-area"></path>
-          <path *ngIf="results" [attr.d]="getLinePath(baselineTrajectory)" class="line baseline"></path>
-          <path *ngIf="results" [attr.d]="getLinePath(projectedTrajectory)" class="line projected"></path>
+        <path *ngIf="results" [attr.d]="getConfidenceAreaPath()" class="confidence-area"></path>
+        <path *ngIf="results" [attr.d]="getLinePath(baselineTrajectory)" class="line baseline"></path>
+        <path *ngIf="results" [attr.d]="getLinePath(projectedTrajectory)" class="line projected"></path>
 
-          <path *ngIf="!results" d="M 46,238 L 104,231 L 162,227 L 220,220 L 278,216 L 336,210 L 394,205 L 452,200 L 510,195 L 568,188" class="line placeholder baseline"></path>
-          <path *ngIf="!results" d="M 46,238 L 104,235 L 162,232 L 220,229 L 278,226 L 336,223 L 394,220 L 452,217 L 510,214 L 568,210" class="line placeholder projected"></path>
+        <path *ngIf="!results" d="M 46,238 L 104,231 L 162,227 L 220,220 L 278,216 L 336,210 L 394,205 L 452,200 L 510,195 L 568,188" class="line placeholder baseline"></path>
+        <path *ngIf="!results" d="M 46,238 L 104,235 L 162,232 L 220,229 L 278,226 L 336,223 L 394,220 L 452,217 L 510,214 L 568,210" class="line placeholder projected"></path>
 
-          <g *ngFor="let year of years; let i = index">
-            <text [attr.x]="46 + (i * 58)" y="292" class="tick">{{ year }}</text>
-          </g>
-        </svg>
+        <!-- Baseline Data Point Markers -->
+        <g *ngIf="results">
+          <circle *ngFor="let value of baselineTrajectory; let i = index"
+                  [attr.cx]="46 + (i * 131)"
+                  [attr.cy]="getY(value)"
+                  r="3.5"
+                  class="data-point baseline-point"
+                  [attr.data-value]="value.toFixed(0)">
+            <title>{{ value.toFixed(0) }}</title>
+          </circle>
+          <text *ngFor="let value of baselineTrajectory; let i = index"
+                [attr.x]="46 + (i * 131)"
+                [attr.y]="getY(value) - 10"
+                class="data-label baseline-label">{{ value.toFixed(0) }}</text>
+        </g>
 
-        <div class="chart-legend">
-          <span><i class="swatch baseline"></i>Current trajectory</span>
-          <span><i class="swatch projected"></i>Post-intervention trajectory</span>
-          <span><i class="swatch interval"></i>Confidence interval</span>
-        </div>
-      </section>
+        <!-- Projected Data Point Markers -->
+        <g *ngIf="results">
+          <circle *ngFor="let value of projectedTrajectory; let i = index"
+                  [attr.cx]="46 + (i * 131)"
+                  [attr.cy]="getY(value)"
+                  r="3.5"
+                  class="data-point projected-point"
+                  [attr.data-value]="value.toFixed(0)">
+            <title>{{ value.toFixed(0) }}</title>
+          </circle>
+          <text *ngFor="let value of projectedTrajectory; let i = index"
+                [attr.x]="46 + (i * 131)"
+                [attr.y]="getY(value) + 16"
+                class="data-label projected-label">{{ value.toFixed(0) }}</text>
+        </g>
 
-      <section class="ripple-panel active" [class.is-empty]="!results">
-        <div class="ripple-header">
-          <h3>Ripple Impact</h3>
-          <p>{{ selectedLocation || 'Selected geography' }}</p>
-          <span class="pending-tag" *ngIf="!results">Preview mode</span>
-        </div>
+        <g *ngFor="let year of years; let i = index">
+          <text [attr.x]="46 + (i * 131)" y="292" class="tick">{{ year }}</text>
+        </g>
+      </svg>
 
-        <svg viewBox="0 0 760 280" class="ripple-svg" xmlns="http://www.w3.org/2000/svg" aria-label="Policy ripple visualization">
-          <defs>
-            <radialGradient id="resultsRippleGlow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.34"/>
-              <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-
-          <circle cx="380" cy="140" r="114" class="ripple-zone outer"></circle>
-          <circle cx="380" cy="140" r="78" class="ripple-zone secondary"></circle>
-          <circle cx="380" cy="140" r="44" class="ripple-zone primary"></circle>
-          <circle cx="380" cy="140" r="108" fill="url(#resultsRippleGlow)"></circle>
-        </svg>
-
-        <div class="ripple-metrics compact">
-          <div class="metric primary">
-            <p>Primary Ripple</p>
-            <h3>{{ results ? '+' + getRippleMetric('healthcareUtilizationIncrease') + '%' : '--' }}</h3>
-            <small>Healthcare utilization</small>
-          </div>
-          <div class="metric secondary">
-            <p>Secondary Ripple</p>
-            <h3>{{ results ? '-' + getRippleMetric('erVisitDensityDecrease') + '%' : '--' }}</h3>
-            <small>ER visit density</small>
-          </div>
-          <div class="metric outer">
-            <p>Outer Ripple</p>
-            <h3>{{ results ? '-' + getRippleMetric('prematureMortalityReductionPer100k') : '--' }}</h3>
-            <small>Premature mortality per 100k</small>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="summary-grid compact">
-      <article class="summary-card">
-        <p>Projected Mortality Change</p>
-        <h3>{{ results ? '-' + getMortalityReductionPct().toFixed(1) + '%' : '--' }}</h3>
-        <small>relative to baseline trajectory</small>
-      </article>
-
-      <article class="summary-card">
-        <p>Avoided ER Visits</p>
-        <h3>{{ results ? (avoidedERVisits | number) : '--' }}</h3>
-        <small>estimated annual avoidable visits</small>
-      </article>
-
-      <article class="summary-card roi">
-        <p>ROI Counter</p>
-        <h3>{{ results ? ('$ ' + roiSavingsPerDollar.toFixed(2)) : '--' }}</h3>
-        <small>community savings for every $1 spent</small>
-      </article>
-    </div>
-
-    <section class="policy-language">
-      <h3>Policy Snapshot</h3>
-      <p *ngIf="results"><strong>Stack modeled:</strong> {{ getPolicySummary() }}</p>
-      <p *ngIf="results"><strong>Confidence (Year 10):</strong> {{ confidenceSummary.lower }} - {{ confidenceSummary.upper }} deaths per 100,000.</p>
-      <p *ngIf="results"><strong>Budget narrative:</strong> Annualized downstream savings are near ${{ annualSavings | number }}.</p>
-      <p *ngIf="!results">Run simulation to populate this summary.</p>
+      <div class="chart-legend">
+        <span><i class="swatch baseline"></i>Current trajectory</span>
+        <span><i class="swatch projected"></i>Post-intervention</span>
+        <span><i class="swatch interval"></i>Confidence</span>
+      </div>
     </section>
+
+    <!-- Ripple Impact Metrics (Horizontal Cards) -->
+    <div class="ripple-metrics-horizontal">
+      <div class="metric-card primary">
+        <p class="metric-label">Primary Ripple</p>
+        <h3 class="metric-value">{{ results ? '+' + getRippleMetric('healthcareUtilizationIncrease') + '%' : '--' }}</h3>
+        <small class="metric-unit">Healthcare utilization</small>
+      </div>
+      <div class="metric-card secondary">
+        <p class="metric-label">Secondary Ripple</p>
+        <h3 class="metric-value">{{ results ? '-' + getRippleMetric('erVisitDensityDecrease') + '%' : '--' }}</h3>
+        <small class="metric-unit">ER visit density</small>
+      </div>
+      <div class="metric-card outer">
+        <p class="metric-label">Outer Ripple</p>
+        <h3 class="metric-value">{{ results ? '-' + getRippleMetric('prematureMortalityReductionPer100k') : '--' }}</h3>
+        <small class="metric-unit">Premature mortality per 100k</small>
+      </div>
+    </div>
   </div>
 </div>

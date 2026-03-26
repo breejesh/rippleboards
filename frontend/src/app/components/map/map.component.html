@@ -1,54 +1,6 @@
-<div class="map-container">
-  <div class="map-header">
-    <p class="kicker">Region Selection</p>
-    <h2>Choose Geography</h2>
-    <p class="header-subtitle">Search and pick one region.</p>
-  </div>
-
-  <div class="controls">
-    <div class="filter-row compact">
-      <input 
-        type="text" 
-        placeholder="Search location, state, or ZIP"
-        [(ngModel)]="searchQuery"
-        (input)="onSearchChange()"
-        class="search-input">
-
-      <select 
-        [(ngModel)]="stateFilter"
-        (change)="onStateChange()"
-        class="state-select">
-        <option value="">All States</option>
-        <option *ngFor="let state of states" [value]="state">{{ state }}</option>
-      </select>
-      
-      <button *ngIf="searchQuery || stateFilter" (click)="clearFilters()" class="clear-btn">
-        Reset
-      </button>
-
-      <span class="count-badge">{{ getDisplayCount() }}</span>
-    </div>
-  </div>
-
-  <div *ngIf="loading" class="loading-state">
+<div class="leaflet-wrapper">
+  <div id="leaflet-map" class="leaflet-map"></div>
+  <div *ngIf="loading" class="loading-overlay">
     <div class="spinner"></div>
-    <p>Loading regions...</p>
-  </div>
-
-  <div class="locations-grid" *ngIf="!loading">
-    <button 
-      *ngFor="let loc of getVisibleLocations()"
-      (click)="selectLocation(loc.LocationName)"
-      [class.selected]="selectedLocation === loc.LocationName"
-      class="location-btn"
-      title="{{loc.LocationName}}, {{ loc.StateDesc }}">
-      <span class="state-badge">{{ loc.StateDesc }}</span>
-      <span class="location-name">{{ loc.LocationName }}</span>
-    </button>
-  </div>
-
-  <div *ngIf="!loading && filteredLocations.length === 0" class="no-results">
-    <p>No matching regions.</p>
-    <button (click)="clearFilters()" class="retry-btn">Clear Filters</button>
   </div>
 </div>

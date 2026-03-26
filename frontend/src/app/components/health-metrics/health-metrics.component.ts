@@ -29,17 +29,8 @@ export class HealthMetricsComponent implements OnInit {
   }
 
   loadMetrics() {
-    this.loading = true;
-    this.api.getMeasures(this.location).subscribe(
-      (data: any) => {
-        this.metrics = this.processMetrics(data);
-        this.loading = false;
-      },
-      (error) => {
-        console.error('Error loading metrics:', error);
-        this.loading = false;
-      }
-    );
+    this.loading = false;
+    // Component not currently used in new layout
   }
 
   processMetrics(rawData: any[]): any[] {

@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { ApiService } from '../../services/api.service';
   templateUrl: './control-panel.component.html',
   styleUrls: ['./control-panel.component.css']
 })
-export class ControlPanelComponent implements OnChanges {
+export class ControlPanelComponent implements OnInit, OnChanges {
   @Input() selectedLocation: string = '';
   @Output() simulationResults = new EventEmitter<any>();
   @Output() scenarioCreated = new EventEmitter<any>();
@@ -19,8 +19,24 @@ export class ControlPanelComponent implements OnChanges {
 
   loading: boolean = false;
   scenarios: any[] = [];
+  measures: string[] = [];
+  selectedMeasure: string = '';
+  @Output() measureChanged = new EventEmitter<string>();
 
-  constructor(private api: ApiService) {}
+  constructor(private api: ApiService) { }
+
+  ngOnInit() {
+    this.api.getAllMeasures().subscribe((data: any) => {
+      this.measures = Array.isArray(data) ? data : [];
+      if (this.measures.length) {
+        this.selectedMeasure = this.measures[0];
+        this.measureChanged.emit(this.selectedMeasure);
+      }
+    }, (err) => {
+      console.error('Error fetching measures:', err);
+    });
+  }
+
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['selectedLocation'] && changes['selectedLocation'].currentValue) {
@@ -111,6 +127,8 @@ export class ControlPanelComponent implements OnChanges {
         this.scenarios.push(scenario);
         this.scenarioCreated.emit(scenario);
         this.loading = false;
+        // After simulation, notify any listeners about measure (re-run map for current selection)
+        this.measureChanged.emit(this.selectedMeasure);
       },
       (error) => {
         console.error('Simulation error:', error);

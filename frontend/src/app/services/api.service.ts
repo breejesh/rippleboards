@@ -10,19 +10,27 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getLocations(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/locations`);
+  getStates(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/states`);
   }
 
-  getMeasures(locationId: string): Observable<any> {
-    return this.http.get(`${this.apiUrl}/measures/${locationId}`);
+  getStateMeasures(stateName: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}/state-measures/${encodeURIComponent(stateName)}`);
   }
 
-  simulate(location: string, intervention: string, intensity: number): Observable<any> {
+  getAllMeasures(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/measures`);
+  }
+
+  simulate(state: string, intervention: string, intensity: number): Observable<any> {
     return this.http.post(`${this.apiUrl}/simulate`, {
-      location,
+      state,
       intervention,
       intensity
     });
+  }
+
+  runSimulation(data: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/simulate`, data);
   }
 }
